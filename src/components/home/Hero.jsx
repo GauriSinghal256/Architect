@@ -131,14 +131,15 @@ const Hero = () => {
       </div>
 
       {/* Process Steps */}
+      <div className='flex justify-center items-center pt-5'><h3 className="text-gray-600 text-3xl text-centre  font-semibold uppercase tracking-wider mb-1">
+          How We Works
+        </h3></div>
+       
    <div className="flex flex-col md:flex-row items-center justify-between p-4  my-10">
       <div className="md:w-1/2 mb-2 md:mb-0">
-        <h3 className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-1">
-          How We Works
-        </h3>
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-          04 easy steps to get <br />
-          interior design in Kurukshetra
+        <h1 className="text-4xl md:text-2xl font-bold text-gray-800 leading-tight">
+          4 easy steps to get <br />
+          architecture design in Kurukshetra
         </h1>
       </div>
 
@@ -160,7 +161,7 @@ const Hero = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{
-                height: '110vh',
+                height: '90vh',
                 width: '110%',
                 zIndex: 10,
                 position: 'relative',

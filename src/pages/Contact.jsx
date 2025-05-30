@@ -128,18 +128,18 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium text-lg mb-3">Follow Us</h3>
                   <div className="flex space-x-4">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
+                    {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
                       <FaLinkedinIn className="w-5 h-5 text-primary-800" />
-                    </a>
+                    </a> */}
                     <a href="https://www.instagram.com/anshul_architects/" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
                       <FaInstagram className="w-5 h-5 text-primary-800" />
                     </a>
                     <a href="https://www.facebook.com/sharma.anshul.upadhyay/" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
                       <FaFacebookF className="w-5 h-5 text-primary-800" />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
+                    {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
                       <FaTwitter className="w-5 h-5 text-primary-800" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
