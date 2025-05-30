@@ -6,17 +6,18 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary-800 text-white">
+    <footer className="bg-primary-700 text-white">
       <div className="container-custom pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="32" height="32" rx="4" fill="white"/>
                 <path d="M9 23V9H16L23 16V23H9Z" stroke="#262626" strokeWidth="2"/>
                 <path d="M16 9V16H23" stroke="#262626" strokeWidth="2"/>
-              </svg>
+              </svg> */}
+              <img className='h-6 w-6' src="/AA.png" alt="" />
               <span className="text-xl font-heading font-semibold">Anshul Architects</span>
             </div>
             <p className="text-primary-200 mb-6">
@@ -79,7 +80,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="w-5 h-5 mt-1 text-primary-200" />
-                <span className="text-primary-200">123 Architecture Avenue, Design District, New Delhi, 110001</span>
+                <span className="text-primary-200">Sco 8, Green Feild Market, opposite Sector 7, DD colony, Kurukshetra, Haryana 136118</span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="w-5 h-5 text-primary-200" />
