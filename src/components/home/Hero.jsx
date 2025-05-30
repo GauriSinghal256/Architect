@@ -32,7 +32,7 @@ const processSteps = [
 const heroSlides = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg',
+    image: '/photo3.jpg',
     title: 'Innovative Design Solutions',
     subtitle: 'Creating spaces that inspire and endure'
   },

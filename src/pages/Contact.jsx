@@ -50,7 +50,7 @@ const Contact = () => {
   {/* Content */}
   <div className="container-custom relative z-10 flex flex-col mx-auto justify-center items-center text-white px-4 text-center h-full">
     <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Contact Us</h1>
-    <p className="text-lg max-w-2xl text-white">
+    <p className="text-lg max-w-2xl pt-4 text-white">
       Get in touch with our team to discuss your project or learn more about our services.
       We're here to turn your architectural vision into reality.
     </p>
@@ -73,7 +73,7 @@ const Contact = () => {
                 />
                 
                 <div className="space-y-6 mb-10">
-                  <div className="flex items-start space-x-4 border border-2 border-gray-400 p-4 hover:bg-gray-200 ">
+                  <div className="flex items-start space-x-4 border  border-gray-400 p-4 hover:bg-gray-200 ">
                     <div className="bg-primary-100 p-3 rounded-lg">
                       <FaMapMarkerAlt className="w-6 h-6 text-primary-800" />
                     </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-4 border border-2 border-gray-400 p-4 hover:bg-gray-200">
+                  <div className="flex items-start space-x-4 border  border-gray-400 p-4 hover:bg-gray-200">
                     <div className="bg-primary-100 p-3 rounded-lg">
                       <FaEnvelope className="w-6 h-6 text-primary-800" />
                     </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-4 border border-2 border-gray-400 p-4 hover:bg-gray-200">
+                  <div className="flex items-start space-x-4 border border-gray-400 p-4 hover:bg-gray-200">
                     <div className="bg-primary-100 p-3 rounded-lg">
                       <FaPhone className="w-6 h-6 text-primary-800" />
                     </div>

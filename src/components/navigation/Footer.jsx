@@ -91,7 +91,7 @@ const Footer = () => {
               <li className="flex items-center space-x-3">
                 <FaPhone className="w-5 h-5 text-primary-200" />
                 <a href="tel:+911234567890" className="text-primary-200 hover:text-white transition-colors">
-                  +91 123 456 7890
+                  +91 89300 00984
                 </a>
               </li>
             </ul>

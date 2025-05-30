@@ -110,7 +110,7 @@ const Navbar = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     `p-2 font-medium ${
-                      isActive ? 'text-primary-300 bg-primary-50 rounded' : 'text-gray-400'
+                      isActive ? 'text-primary-600 bg-primary-50 rounded' : 'text-gray-500'
                     }`
                   }
                 >
