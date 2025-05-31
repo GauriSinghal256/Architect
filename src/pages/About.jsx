@@ -288,7 +288,12 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-16 bg-primary-800 text-white">
+      <section className="relative py-24 md:py-32 bg-primary-800 text-gray-500 bg-cover bg-center bg-no-repeat "style={{ backgroundImage: `url('/img.jpg')` }}>
+        <div className="container-custom relative z-10 text-white  flex mx-auto justify-center items-center">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold shadow-white mb-4">Our Achievements</h1>
+        </div>
+      </section>
+      {/* <section className="py-16 bg-primary-800 text-white">
         <div className="container-custom">
           <SectionTitle
             title="Our Values"
@@ -341,7 +346,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Achievements */}
       <section className="py-16 bg-white">
