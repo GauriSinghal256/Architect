@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaLinkedinIn, FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -24,13 +24,6 @@ const Contact = () => {
       opacity: 0,
     },
   };
-
-  // Preload the hero video on mount
-  useEffect(() => {
-    const video = document.createElement('video');
-    video.src = 'v2.mp4';
-    video.preload = 'auto';
-  }, []);
 
   return (
     <motion.div
