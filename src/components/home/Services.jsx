@@ -70,7 +70,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-gradient-to-br from-primary-50 via-white to-primary-100">
       <div className="container-custom">
         <SectionTitle 
           title="Our Services" 
@@ -78,46 +78,46 @@ const Services = () => {
           center={true}
         />
         
-        <div className="grid  grid-cols-1 hover:text-orange-400 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
           {services.map((service, index) => (
             <AnimatedSection 
               key={service.id} 
               delay={index * 0.1}
-              className="bg-white rounded-lg shadow-md hover:bg-gray-300 hover:shadow-xl transition-shadow duration-300 p-8"
             >
-              <div className="text-primary-800  mb-4">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-heading font-semibold mb-3">{service.title}</h3>
-              <p className="text-primary-600 mb-6">{service.description}</p>
-              <Link 
-                to="/services" 
-                className="text-primary-800 font-medium inline-flex items-center hover:text-primary-600 transition-colors"
+              <motion.div
+                whileHover={{
+                  scale: 1.06,
+                  boxShadow: "0 8px 32px rgba(30,41,59,0.12)",
+                  background: "linear-gradient(135deg,rgba(255,255,255,0.95) 0%,rgba(240,240,255,0.85) 100%)"
+                }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-white rounded-2xl shadow-md p-10 h-full flex flex-col items-center text-center transition-all duration-300"
               >
-                Learn More
-                <svg
-                  className="ml-2 w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <motion.div
+                  whileHover={{ rotate: 8 }}
+                  transition={{ type: "spring" }}
+                  className="mb-6 text-primary-800"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  ></path>
-                </svg>
-              </Link>
+                  {service.icon}
+                </motion.div>
+                <h3 className="text-xl font-heading font-semibold mb-3 text-primary-900">{service.title}</h3>
+                <p className="text-primary-600 mb-0">{service.description}</p>
+              </motion.div>
             </AnimatedSection>
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <Link to="/services" className="btn btn-primary">
-            View All Services
-          </Link>
+        <div className="text-center mt-16">
+          <motion.div
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="inline-block"
+          >
+            <Link to="/services" className="btn btn-primary px-8 py-3 text-lg rounded-full shadow-lg transition-all duration-300">
+              View All Services
+            </Link>
+          </motion.div>
         </div>
       </div>
     </section>

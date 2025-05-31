@@ -16,7 +16,7 @@ const ProjectCard = ({ project, index }) => {
       whileHover={{ y: -10 }}
       className="group overflow-hidden bg-white rounded-lg shadow-md"
     >
-      <Link to={`/projects/${project.id}`} className="block">
+      <div className="block">
         <div className="relative overflow-hidden h-64">
           <motion.img
             whileHover={{ scale: 1.05 }}
@@ -40,12 +40,8 @@ const ProjectCard = ({ project, index }) => {
           <p className="text-primary-600 mb-4 line-clamp-2">
             {project.description}
           </p>
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-primary-500">{project.location}</span>
-            <span className="text-primary-800 font-medium text-sm">View Project</span>
-          </div>
         </div>
-      </Link>
+      </div>
     </motion.div>
   );
 };

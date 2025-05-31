@@ -132,7 +132,7 @@ const Hero = () => {
 
       {/* Process Steps */}
      <div className="flex flex-col items-center pt-5">
-      <h3 className="text-gray-600 text-3xl text-center font-semibold uppercase tracking-wider pb-0.5">
+      <h3 className="text-gray-600 text-3xl text-center font-semibold uppercase tracking-wider pt-3 pb-0.5">
         How We Works
       </h3>
 
