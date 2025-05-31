@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/ui/SectionTitle';
 import ProjectCard from '../components/ui/ProjectCard';
@@ -85,6 +85,14 @@ const categories = ['All', ...new Set(allProjects.map(project => project.categor
 const Projects = () => {
 	const [filter, setFilter] = useState('All');
 	const [searchTerm, setSearchTerm] = useState('');
+
+	// Preload all project images on mount
+	useEffect(() => {
+		allProjects.forEach(project => {
+			const img = new window.Image();
+			img.src = project.image;
+		});
+	}, []);
 
 	// Filter projects based on category and search term
 	const filteredProjects = allProjects.filter(project => {
