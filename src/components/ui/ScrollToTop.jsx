@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { pathname } = useLocation();
 
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, [pathname]);
+
+  // Show button on scroll
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
