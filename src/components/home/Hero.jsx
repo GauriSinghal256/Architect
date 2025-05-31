@@ -131,11 +131,21 @@ const Hero = () => {
       </div>
 
       {/* Process Steps */}
-      <div className='flex justify-center items-center pt-5'><h3 className="text-gray-600 text-3xl text-centre  font-semibold uppercase tracking-wider mb-1">
-          How We Works
-        </h3></div>
+     <div className="flex flex-col items-center pt-5">
+      <h3 className="text-gray-600 text-3xl text-center font-semibold uppercase tracking-wider pb-0.5">
+        How We Works
+      </h3>
+
+      <motion.div
+        className="w-48 h-0.5 bg-primary-700 mt-2"
+        initial={{ width: 0 }}
+        whileInView={{ width: "18rem" }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.8 }}
+      />
+    </div>
        
-   <div className="flex flex-col md:flex-row items-center justify-between p-4  my-10">
+   <div className="flex flex-col md:flex-row items-center justify-between p-3 ">
       <div className="md:w-1/2 mb-2 md:mb-0">
         <h1 className="text-4xl md:text-2xl font-bold text-gray-800 leading-tight">
           4 easy steps to get <br />
