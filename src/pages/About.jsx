@@ -93,6 +93,8 @@ const About = () => {
 					muted
 					loop
 					playsInline
+					preload="auto"
+					poster="/about-poster.jpg"
 					className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 z-[-1] object-cover"
 				>
 					<source src="v3.mp4" type="video/mp4" />
