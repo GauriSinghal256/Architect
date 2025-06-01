@@ -9,7 +9,7 @@ const allProjects = [
 		id: 1,
 		title: 'Azure Horizon Tower',
 		description: 'A 42-story mixed-use skyscraper featuring sustainable design elements and a distinctive silhouette on the city skyline.',
-		image: 'https://images.pexels.com/photos/2404843/pexels-photo-2404843.jpeg?auto=compress&cs=tinysrgb&w=1200',
+		image: 'aa1.webp',
 		category: 'Commercial',
 		location: 'Mumbai, India'
 	},
@@ -17,7 +17,7 @@ const allProjects = [
 		id: 2,
 		title: 'Serenity Eco Villas',
 		description: 'Luxury eco-friendly villas designed with passive cooling systems and integrated with the natural landscape.',
-		image: 'https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=1200',
+		image: 'aa2.webp',
 		category: 'Residential',
 		location: 'Goa, India'
 	},
@@ -25,7 +25,7 @@ const allProjects = [
 		id: 3,
 		title: 'Harmonic Culture Center',
 		description: 'A cultural hub featuring a concert hall, art galleries, and educational spaces with stunning acoustics and lighting design.',
-		image: 'https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=1200',
+		image: 'aa3.webp',
 		category: 'Cultural',
 		location: 'Delhi, India'
 	},
@@ -33,7 +33,7 @@ const allProjects = [
 		id: 4,
 		title: 'Verdant Office Campus',
 		description: 'A corporate campus designed around central courtyards and featuring extensive green roofs and natural ventilation.',
-		image: 'https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=1200',
+		image: 'aa4.webp',
 		category: 'Commercial',
 		location: 'Bangalore, India'
 	},
@@ -71,10 +71,10 @@ const allProjects = [
 	},
 	{
 		id: 9,
-		title: 'Sustainable School Campus',
-		description: 'An educational facility designed with sustainability at its core, featuring solar power, rainwater harvesting, and natural ventilation.',
-		image: 'https://images.pexels.com/photos/256520/pexels-photo-256520.jpeg?auto=compress&cs=tinysrgb&w=1200',
-		category: 'Educational',
+		title: 'Sustainable Homes',
+		description: 'A private home featuring clean lines, open spaces, and a seamless indoor-outdoor living experience.',
+		image: 'aa6.webp',
+		category: 'Residential',
 		location: 'Chennai, India'
 	},
 ];
