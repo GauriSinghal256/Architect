@@ -71,6 +71,7 @@ const Footer = () => {
               <li className="text-primary-200 hover:text-white transition-colors">Landscape Design</li>
               <li className="text-primary-200 hover:text-white transition-colors">Renovation</li>
               <li className="text-primary-200 hover:text-white transition-colors">Construction Management</li>
+              <li className="text-primary-200 hover:text-white transition-colors">Evaluation</li>
             </ul>
           </div>
 

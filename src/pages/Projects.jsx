@@ -9,7 +9,7 @@ const allProjects = [
 		id: 1,
 		title: 'Azure Horizon Tower',
 		description: 'A 42-story mixed-use skyscraper featuring sustainable design elements and a distinctive silhouette on the city skyline.',
-		image: 'aa1.webp',
+		image: '/projectSection/aa1.webp',
 		category: 'Commercial',
 		location: 'Mumbai, India'
 	},
@@ -17,7 +17,7 @@ const allProjects = [
 		id: 2,
 		title: 'Serenity Eco Villas',
 		description: 'Luxury eco-friendly villas designed with passive cooling systems and integrated with the natural landscape.',
-		image: 'aa2.webp',
+		image: '/projectSection/aa2.webp',
 		category: 'Residential',
 		location: 'Goa, India'
 	},
@@ -25,7 +25,7 @@ const allProjects = [
 		id: 3,
 		title: 'Harmonic Culture Center',
 		description: 'A cultural hub featuring a concert hall, art galleries, and educational spaces with stunning acoustics and lighting design.',
-		image: 'aa3.webp',
+		image: '/projectSection/aa3.webp',
 		category: 'Cultural',
 		location: 'Delhi, India'
 	},
@@ -33,7 +33,7 @@ const allProjects = [
 		id: 4,
 		title: 'Verdant Office Campus',
 		description: 'A corporate campus designed around central courtyards and featuring extensive green roofs and natural ventilation.',
-		image: 'aa4.webp',
+		image: '/projectSection/aa4.webp',
 		category: 'Commercial',
 		location: 'Bangalore, India'
 	},
@@ -41,23 +41,23 @@ const allProjects = [
 		id: 5,
 		title: 'Floating Pavilion Restaurant',
 		description: 'An award-winning waterfront restaurant with panoramic views and a unique floating design that adapts to water levels.',
-		image: 'https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1200',
+		image: '/projectSection/aaps1.jpg',
 		category: 'Hospitality',
 		location: 'Kerala, India'
 	},
 	{
 		id: 6,
-		title: 'Urban Renewal Mixed-Use Development',
-		description: 'A transformative urban project converting former industrial zones into vibrant mixed-use neighborhoods.',
-		image: 'https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1200',
-		category: 'Urban Planning',
+		title: 'Office Designs',
+		description: ' Best office designs are available this is one of them showcasing the art of designing.',
+		image: '/projectSection/aaps2.jpg',
+		category: 'Hospitality',
 		location: 'Hyderabad, India'
 	},
 	{
 		id: 7,
-		title: 'Tranquil Wellness Retreat',
-		description: 'A spa and wellness center nestled in the mountains, designed to promote relaxation and connection with nature.',
-		image: 'https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1200',
+		title: 'Hazel Overseas Office',
+		description: 'Best office designs are available this is one of them showcasing the art of designing.',
+		image: '/projectSection/aaps3.jpg',
 		category: 'Hospitality',
 		location: 'Uttarakhand, India'
 	},
@@ -74,6 +74,30 @@ const allProjects = [
 		title: 'Sustainable Homes',
 		description: 'A private home featuring clean lines, open spaces, and a seamless indoor-outdoor living experience.',
 		image: 'aa6.webp',
+		category: 'Residential',
+		location: 'Chennai, India'
+	},
+	{
+		id: 10,
+		title: 'Hazel Overseas Office',
+		description: 'Best office designs are available this is one of them showcasing the art of designing.',
+		image: '/projectSection/aaps5.jpg',
+		category: 'Hospitality',
+		location: 'Uttarakhand, India'
+	},
+	{
+		id: 11,
+		title: 'Office Designing',
+		description: 'Best office designs are available this is one of them showcasing the art of designing.',
+		image: '/projectSection/aaps4.jpg',
+		category: 'Hospitality',
+		location: 'Pune, India'
+	},
+	{
+		id: 12,
+		title: 'Sustainable Homes',
+		description: 'A private home featuring clean lines, open spaces, and a seamless indoor-outdoor living experience.',
+		image: '/projectSection/aaps6.jpg',
 		category: 'Residential',
 		location: 'Chennai, India'
 	},
@@ -126,21 +150,30 @@ const Projects = () => {
 					playsInline
 					className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 z-[-1] object-cover"
 				>
-					<source src="Projects.mp4" type="video/mp4" />
+					<source src="project2.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
 				</video>
 
 				{/* Content */}
-				<div className="container-custom relative z-10 flex flex-col mx-auto justify-center items-center text-white px-4 text-center h-full">
+				{/* <div className="container-custom relative z-10 flex flex-col mx-auto justify-center items-center text-black px-4 text-center h-full">
 					<h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
 						Our Projects
 					</h1>
-					<p className="text-lg max-w-2xl pt-4 text-white">
+					<p className="text-lg max-w-2xl pt-4 text-black">
 						Explore our diverse portfolio of architectural projects spanning residential, 
             commercial, cultural, and urban planning domains.
 					</p>
-				</div>
+				</div> */}
 			</section>
+			<div className="flex flex-col justify-center items-center">
+  <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 relative animate__animated animate__fadeInDown pt-2">
+    Our Projects
+    <span className="absolute bottom-0 left-0 w-full h-1 bg-black transform scale-x-0 origin-left animate__animated animate__slideInLeft animate__delay-1s" style={{ animationDuration: '1s', animationFillMode: 'forwards' }}></span>
+  </h1>
+  <p className="text-lg pt-3 text-black animate__animated animate__fadeInUp" style={{ animationDuration: '1s', animationDelay: '0.5s' }}>
+    Explore our diverse portfolio of architectural projects spanning residential, commercial, cultural, and urban planning domains.
+  </p>
+</div>
       
 			{/* Projects Section */}
 			<section className="section-padding bg-primary-50">

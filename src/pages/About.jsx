@@ -261,14 +261,23 @@ const About = () => {
 				</div>
 			</section>
 
+			<div
+             className="bg-cover bg-center h-[90vh] flex items-center justify-center"
+             style={{ backgroundImage: "url('Ourateam.jpg')" }}
+           >
+             <h1 className="text-black text-6xl font-bold">Our Team</h1>
+           </div>
+
+
+
 			{/* Team */}
 			<section className="py-16 bg-white">
 				<div className="container-custom">
-					<SectionTitle
+					{/* <SectionTitle
 						title="Our Team"
 						subtitle="The people behind our success"
 						center={true}
-					/>
+					/> */}
 
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 						{teamMembers.map((member, index) => (

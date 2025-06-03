@@ -43,7 +43,7 @@ const services = [
 		description:
 			"We develop comprehensive urban planning solutions that create vibrant, sustainable communities. Our approach integrates transportation, infrastructure, environmental considerations, and social dynamics to create places where people thrive.",
 		image:
-			"https://images.pexels.com/photos/3876407/pexels-photo-3876407.jpeg?auto=compress&cs=tinysrgb&w=1200",
+			"UrbanPlanning.jpg",
 		features: [
 			"Master planning",
 			"Urban design guidelines",
@@ -59,7 +59,7 @@ const services = [
 		description:
 			"We breathe new life into existing structures through thoughtful renovation and restoration. Whether updating a historic building or reimagining a modern space, we balance respect for the original architecture with contemporary needs and functions.",
 		image:
-			"https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&w=1200",
+			"Renovation.jpg",
 		features: [
 			"Building assessment and documentation",
 			"Historical preservation",
@@ -75,7 +75,7 @@ const services = [
 		description:
 			"Our construction management services ensure your project is built to the highest standards, on time and within budget. We coordinate all aspects of construction, from contractor selection to final inspection, providing peace of mind throughout the process.",
 		image:
-			"https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1200",
+			"construction-management.jpg",
 		features: [
 			"Contractor selection and bidding",
 			"Schedule development and monitoring",
@@ -83,6 +83,22 @@ const services = [
 			"Quality control inspections",
 			"Construction administration",
 			"Project documentation and reporting",
+		],
+	},
+	{
+		id: 6,
+		title: "Evaluation",
+		description:
+			"Evaluation in architectural design is a critical phase where proposed designs are assessed for their functionality, aesthetics, sustainability, and compliance with user needs and regulatory standards. This stage ensures the design effectively meets its intended purpose before moving into detailed development or construction.",
+		image:
+			"https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1200",
+		features: [
+			"Functional performance analysis",
+		    "Aesthetic and spatial quality review",
+		    "User feedback and usability assessment",
+		    "Compliance with codes and regulations",
+		    "Environmental and sustainability evaluation",
+		    "Cost-effectiveness and feasibility studies"
 		],
 	},
 ];
@@ -356,14 +372,14 @@ const Services = () => {
 			<section
 				className="relative py-24 w-full overflow-hidden"
 				style={{
-					backgroundImage: "url('/abc.jpg')", // Place your beautiful image in public/cta-bg.jpg
+					backgroundImage: "url('abc.jpg')", // Place your beautiful image in public/cta-bg.jpg
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
 				}}
 			>
 				{/* Overlay */}
-				<div className="absolute inset-0 bg-primary-900/70 backdrop-blur-sm"></div>
+				<div className="absolute inset-0"></div>
 				<div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
 					<AnimatedSection>
 						<h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-white drop-shadow-lg">
