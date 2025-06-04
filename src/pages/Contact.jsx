@@ -80,7 +80,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium text-lg mb-1">Our Office</h3>
                       <p className="text-primary-600">
-                       Sco 8, Green Feild Market, opposite Sector 7, DD colony, <br />
+                       Sco 8, Green Feild Market, opposite Sector 7, DD colony,
                         Kurukshetra, Haryana 136118
                       </p>
                     </div>

@@ -7,54 +7,34 @@ import { useInView } from "react-intersection-observer";
 
 // Sample team data
 const teamMembers = [
+	
 	{
 		id: 1,
-		name: "Anshul Sharma",
-		role: "Principal Architect & Founder",
-		bio: "With over 20 years of experience, Anshul leads the firm with a vision for innovative, sustainable architecture. His work has been recognized with numerous awards and featured in international publications.",
+		name: "Deepak Chaudhary",
+		role: "Assistant Architect ",
+		bio: "With a strong foundation in architectural design and a decade of experience in the field, Deepak Chaudhary is a valuable member of Architect Anshul Sharma's team. Holding a graduation degree in Architecture, Deepak has developed a keen eye for detail and a passion for creating functional and aesthetically pleasing spaces.",
 		image:
-			"https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=600",
+		    "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=600",
 	},
 	{
 		id: 2,
-		name: "Priya Mehta",
-		role: "Senior Architect & Partner",
-		bio: "Priya specializes in residential and commercial architecture with a focus on human-centered design. Her approach combines functionality with aesthetic excellence.",
+		name: "Neha Khan",
+		role: "Assistant Architect",
+		bio: "With a strong foundation in architectural design and a decade of experience in the field, Neha Khan is a skilled and dedicated member of Architect Anshul Sharma's team. Holding a diploma degree in Architecture, Neha has developed a keen eye for detail and a passion for creating functional and beautiful spaces.",
 		image:
-			"https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
+		   "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
+			
 	},
 	{
 		id: 3,
-		name: "Vikram Patel",
-		role: "Urban Planning Director",
-		bio: "Vikram brings expertise in urban design and master planning, with a particular interest in sustainable community development and public spaces.",
+		name: "Raj Deep",
+		role: "Contractor",
+		bio: "With over 15 years of experience in the construction industry, Raj Deep is a trusted and seasoned contractor who has been working closely with Architect Anshul Sharma. Holding a diploma degree in Civil Engineering, Raj Deep has developed a strong expertise in managing and executing construction projects of varying complexities.",
 		image:
-			"https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=600",
+		    "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+			
 	},
-	{
-		id: 4,
-		name: "Aisha Singh",
-		role: "Interior Design Lead",
-		bio: "Aisha's innovative approach to interior spaces has transformed numerous projects. She excels at creating harmonious environments that reflect client personalities.",
-		image:
-			"https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600",
-	},
-	{
-		id: 5,
-		name: "Rahul Verma",
-		role: "Project Manager",
-		bio: "Rahul ensures projects are delivered on time and to the highest quality standards. His attention to detail and technical expertise are invaluable to our process.",
-		image:
-			"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
-	},
-	{
-		id: 6,
-		name: "Maya Joshi",
-		role: "Sustainability Consultant",
-		bio: "Maya specializes in green building design and LEED certification. Her knowledge helps integrate sustainable practices throughout our design process.",
-		image:
-			"https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600",
-	},
+
 ];
 
 const About = () => {
@@ -258,6 +238,8 @@ const About = () => {
            </div>
 
 
+            
+
 
 			{/* Team */}
 			<section className="py-16 bg-white">
@@ -296,7 +278,7 @@ const About = () => {
 			<section
 				ref={achievementsRef}
 				className="relative py-32 md:py-44 bg-primary-800 text-white bg-cover bg-center bg-no-repeat transition-all duration-500"
-				style={{ backgroundImage: `url('/house.jpg')` }}
+				style={{ backgroundImage: `url('/homepage/aahp2.jpg')` }}
 			>
 				<div className="container-custom relative z-10 flex flex-col items-center">
 					<h1 className="text-4xl md:text-5xl font-heading font-bold shadow-white mb-12 text-center drop-shadow-lg">

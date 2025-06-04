@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SectionTitle from "../components/ui/SectionTitle";
 import AnimatedSection from "../components/ui/AnimatedSection";
 
+
 // Sample services data
 const services = [
 	{
@@ -11,7 +12,7 @@ const services = [
 		description:
 			"We create innovative and functional architectural designs that balance aesthetics, usability, and sustainability. Our comprehensive approach considers every aspect of your project, from conceptual sketches to detailed construction documents.",
 		image:
-			"https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1200",
+			"\house.jpg",
 		features: [
 			"Conceptual design development",
 			"Schematic design and modeling",
@@ -75,7 +76,7 @@ const services = [
 		description:
 			"Our construction management services ensure your project is built to the highest standards, on time and within budget. We coordinate all aspects of construction, from contractor selection to final inspection, providing peace of mind throughout the process.",
 		image:
-			"construction-management.jpg",
+			"aacw.png",
 		features: [
 			"Contractor selection and bidding",
 			"Schedule development and monitoring",
@@ -173,6 +174,7 @@ const Services = () => {
 					{/* Services List */}
 					<div className="space-y-24">
 						{services.map((service, index) => (
+							
 							<motion.div
 								key={service.id}
 								initial={{ opacity: 0, y: 60 }}
@@ -190,6 +192,7 @@ const Services = () => {
 								}}
 							>
 								{/* Image */}
+								
 								<AnimatedSection
 									direction={index % 2 === 0 ? "left" : "right"}
 								>

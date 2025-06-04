@@ -25,11 +25,11 @@ const projects = [
 	},
 	{
 		id: 3,
-		title: 'Harmonic Culture Center',
+		title: 'Interior Designing',
 		description:
-			'A cultural hub featuring a concert hall, art galleries, and educational spaces with stunning acoustics and lighting design.',
+			'Transforming spaces into timeless expressions of comfort, style, and personality through thoughtful interior design.',
 		image:
-			'/projectSection/aa3.webp',
+			'/homepage/testimonialbg.jpg',
 		category: '',
 		location: '',
 	},
