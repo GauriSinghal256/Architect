@@ -32,21 +32,21 @@ const processSteps = [
 const heroSlides = [
   {
     id: 1,
-    image: '/photo3.jpg',
-    title: 'Innovative Design Solutions',
-    subtitle: 'Creating spaces that inspire and endure'
+    image: '/homepage/aahp3.jpg',
+    title: 'Designing Dreams, Building Realities',
+    subtitle: 'Turning your vision into living form.'
   },
   {
     id: 2,
-    image: 'https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg',
-    title: 'Modern Architecture',
-    subtitle: 'Where form meets function'
+    image: '/homepage/aahp1.jpg',
+    title: 'Where Vision Meets Structure',
+    subtitle: 'From concept to creation — reimagining every detail.'
   },
   {
     id: 3,
-    image: 'bg-2.jpg',
-    title: 'Sustainable Living',
-    subtitle: 'Designing for tomorrow'
+    image: '/homepage/aahp2.jpg',
+    title: 'Timeless Designs, Modern Living',
+    subtitle: 'Elevating everyday living with iconic spaces.'
   }
 ];
 
@@ -132,9 +132,9 @@ const Hero = () => {
 
       {/* Process Steps */}
      <div className="flex flex-col items-center pt-5">
-      <h3 className="text-gray-600 text-3xl text-center font-semibold uppercase tracking-wider pt-3 pb-0.5">
+      {/* <h3 className="text-gray-600 text-3xl text-center font-semibold uppercase tracking-wider pt-3 pb-0.5">
         How We Works
-      </h3>
+      </h3> */}
 
       <motion.div
         className="w-48 h-0.5 bg-primary-700 mt-2"
@@ -145,21 +145,23 @@ const Hero = () => {
       />
     </div>
        
-   <div className="flex flex-col md:flex-row items-center justify-between p-3 ">
-      <div className="md:w-1/2 mb-2 md:mb-0">
-        <h1 className="text-4xl md:text-2xl font-bold text-gray-800 leading-tight">
-          4 easy steps to get <br />
-          architecture design in Kurukshetra
-        </h1>
-      </div>
+  <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="flex flex-col items-center justify-center p-6 max-w-3xl mx-auto"
+    >
+      <h1 className="text-5xl font-extrabold text-gray-900 text-center leading-tight mb-6 tracking-wide">
+        4 Easy Steps to Get <br />
+        Architecture Design in Kurukshetra
+      </h1>
 
-      {/* Right Section: Description */}
-      <div className="md:w-1/3">
-        <p className="text-gray-600 text-base leading-relaxed">
-          The final design of your space varies from one layout to another. The shape of individual spaces also determines the space for cabinets, countertops, and accessories.
-        </p>
-      </div>
-    </div>
+      <p className="text-lg text-gray-700 text-center max-w-xl leading-relaxed">
+        The final design of your space varies from one layout to another.
+        The shape of individual spaces also determines the space for cabinets,
+        countertops, and accessories.
+      </p>
+    </motion.div>
               <div className="bg-gray-100 py-16">
       <div className="container-custom px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -147,13 +147,9 @@ const services = [
 
 const Services = () => {
 	return (
-		<section className="section-padding bg-gradient-to-br from-primary-50 via-white to-primary-100">
+		<section className="section-padding bg-gradient-to-br from-gray-50 via-white to-gray-100">
 			<div className="container-custom">
-				<SectionTitle
-					title="Our Services"
-					subtitle="What we offer"
-					center={true}
-				/>
+				<SectionTitle title="Our Services" subtitle="What we offer" center={true} />
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
 					{services.map((service, index) => (
@@ -161,24 +157,23 @@ const Services = () => {
 							<motion.div
 								whileHover={{
 									scale: 1.06,
-									boxShadow: '0 8px 32px rgba(30,41,59,0.12)',
-									background:
-										'linear-gradient(135deg,rgba(255,255,255,0.95) 0%,rgba(240,240,255,0.85) 100%)',
+									boxShadow: '0 12px 40px rgba(160, 160, 160, 0.3)',
+									background: 'linear-gradient(135deg, #f7f7f7, #e0e0e0)',
 								}}
-								transition={{ type: 'spring', stiffness: 300 }}
-								className="bg-white rounded-2xl shadow-md p-10 h-full flex flex-col items-center text-center transition-all duration-300 group"
+								transition={{ type: 'spring', stiffness: 250 }}
+								className="bg-white rounded-2xl border border-gray-200 p-10 h-full flex flex-col items-center text-center transition-all duration-300 group hover:border-gray-400"
 							>
 								<motion.div
-									whileHover={{ rotate: 8 }}
+									whileHover={{ rotate: 6 }}
 									transition={{ type: 'spring' }}
-									className="mb-6 text-primary-800"
+									className="mb-6 text-gray-600"
 								>
 									{service.icon}
 								</motion.div>
-								<h3 className="text-xl font-heading font-semibold mb-3 text-primary-900 group-hover:text-gray-500 transition-colors duration-300">
+								<h3 className="text-xl font-heading font-semibold mb-3 text-gray-800 group-hover:text-gray-600 transition-colors duration-300">
 									{service.title}
 								</h3>
-								<p className="text-primary-600 mb-0 group-hover:text-gray-500 transition-colors duration-300">
+								<p className="text-gray-600 group-hover:text-gray-500 transition-colors duration-300">
 									{service.description}
 								</p>
 							</motion.div>
@@ -195,7 +190,7 @@ const Services = () => {
 					>
 						<Link
 							to="/services"
-							className="btn btn-primary px-8 py-3 text-lg rounded-full shadow-lg transition-all duration-300"
+							className="px-8 py-3 text-lg rounded-full shadow-md bg-gray-600 text-white hover:bg-gray-700 hover:shadow-gray-400/50 transition-all duration-300"
 						>
 							View All Services
 						</Link>

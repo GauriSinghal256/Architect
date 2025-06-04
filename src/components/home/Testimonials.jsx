@@ -51,7 +51,7 @@ const Testimonials = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
       {
@@ -116,55 +116,63 @@ const Testimonials = () => {
   );
 
   return (
-    <section className="section-padding bg-zinc-700 text-white">
-      <div className="container-custom">
-        <SectionTitle 
-          title="What Our Clients Say" 
-          subtitle="Testimonials"
-          center={true}
-          light={true}
-        />
-        
-        <Slider {...settings} className="testimonial-slider">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="px-4">
-              <AnimatePresence mode="wait">
-                <motion.div 
-                  variants={cardVariants}
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
-                  className="bg-white/10 p-8 rounded-lg backdrop-blur-sm h-full"
-                >
-                  <motion.h4 
-                    variants={childVariants}
-                    className="text-2xl font-heading font-semibold mb-4 text-white"
-                  >
-                    {testimonial.name}
-                  </motion.h4>
-                  <StarRating rating={testimonial.rating} />
-                  <motion.svg
-                    variants={childVariants}
-                    className="w-10 h-10 text-primary-400/30 mb-4"
-                    fill="currentColor"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M10 8v6a6 6 0 01-6 6H4v4h4a10 10 0 0010-10V8h-8zm18 0v6a6 6 0 01-6 6h0v4h4a10 10 0 0010-10V8h-8z" />
-                  </motion.svg>
-                  <motion.p 
-                    variants={childVariants}
-                    className="text-primary-100 leading-relaxed"
-                  >
-                    {testimonial.quote}
-                  </motion.p>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </section>
+    <section 
+  className="section-padding relative bg-cover bg-center bg-no-repeat text-white" 
+  style={{ backgroundImage: "url('/homepage/testmonimg.jpg')" }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60 z-0" />
+
+  {/* Content */}
+  <div className="relative z-10 container-custom">
+    <SectionTitle 
+      title="What Our Clients Say" 
+      subtitle="Testimonials"
+      center={true}
+      light={true}
+    />
+
+    <Slider {...settings} className="testimonial-slider">
+      {testimonials.map((testimonial) => (
+        <div key={testimonial.id} className="px-4">
+          <AnimatePresence mode="wait">
+            <motion.div 
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="bg-white/10 p-8 rounded-lg backdrop-blur-sm h-full"
+            >
+              <motion.h4 
+                variants={childVariants}
+                className="text-2xl font-heading font-semibold mb-4 text-white"
+              >
+                {testimonial.name}
+              </motion.h4>
+              <StarRating rating={testimonial.rating} />
+              <motion.svg
+                variants={childVariants}
+                className="w-10 h-10 text-primary-400/30 mb-4"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M10 8v6a6 6 0 01-6 6H4v4h4a10 10 0 0010-10V8h-8zm18 0v6a6 6 0 01-6 6h0v4h4a10 10 0 0010-10V8h-8z" />
+              </motion.svg>
+              <motion.p 
+                variants={childVariants}
+                className="text-white leading-relaxed"
+              >
+                {testimonial.quote}
+              </motion.p>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      ))}
+    </Slider>
+  </div>
+</section>
+
   );
 };
 

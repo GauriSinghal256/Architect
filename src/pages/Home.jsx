@@ -38,8 +38,8 @@ const Home = () => {
       <Hero />
       <About />
       <Services />
-      <FeaturedProjects />
       <Testimonials />
+      <FeaturedProjects />
       <ContactCTA />
     </motion.div>
   );

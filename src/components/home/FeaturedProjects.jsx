@@ -10,8 +10,8 @@ const projects = [
 			'A 42-story mixed-use skyscraper featuring sustainable design elements and a distinctive silhouette on the city skyline.',
 		image:
 			'/projectSection/aa1.webp',
-		category: 'Commercial',
-		location: 'Mumbai, India',
+		category: '',
+		location: '',
 	},
 	{
 		id: 2,
@@ -19,9 +19,9 @@ const projects = [
 		description:
 			'Luxury eco-friendly villas designed with passive cooling systems and integrated with the natural landscape.',
 		image:
-			'/projectSection/aa2.webp',
-		category: 'Residential',
-		location: 'Goa, India',
+			'/homepage/p2aa.jpg',
+		category: '',
+		location: '',
 	},
 	{
 		id: 3,
@@ -30,8 +30,8 @@ const projects = [
 			'A cultural hub featuring a concert hall, art galleries, and educational spaces with stunning acoustics and lighting design.',
 		image:
 			'/projectSection/aa3.webp',
-		category: 'Cultural',
-		location: 'Delhi, India',
+		category: '',
+		location: '',
 	},
 ];
 
@@ -67,9 +67,9 @@ const FeaturedProjects = () => {
 								/>
 							</div>
 							<div className="w-full lg:w-1/3">
-								<span className="inline-block px-4 py-2 bg-primary-50 text-primary-800 rounded-full text-sm font-medium mb-4">
+								{/* <span className="inline-block px-4 py-2 bg-primary-50 text-primary-800 rounded-full text-sm font-medium mb-4">
 									{project.category}
-								</span>
+								</span> */}
 								<h3 className="text-3xl font-heading font-bold mb-4">
 									{project.title}
 								</h3>

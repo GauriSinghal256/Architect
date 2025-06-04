@@ -128,18 +128,7 @@ const About = () => {
 							<SectionTitle title="Our Story" subtitle="The journey" />
 							<div className="space-y-6 text-primary-700 text-lg">
 								<p>
-									Founded in 2008 by Anshul Sharma, Anshul Architects began as a
-									small practice with a vision to create architecture that
-									meaningfully enhances people's lives. What started as a
-									three-person studio has grown into a diverse team of over 40
-									talented professionals.
-								</p>
-								<p>
-									Our journey has been defined by a commitment to excellence,
-									innovation, and sustainability. From our first residential
-									project to large-scale urban developments, we have maintained
-									our founding principles: listen carefully to our clients,
-									respect the context, and design with integrity.
+									With over two decades of experience, Anshul Architects is recognized as one of the best architects in Kurukshetra. We focus on creating spaces that feel like home — whether it’s designing your dream house, planning a modern office, or crafting the perfect interior. We also offer Vastu consulting, industrial design, and landscape planning, ensuring every space is beautiful, balanced, and deeply personal.
 								</p>
 								<p>
 									Over the years, we have had the privilege of working on a wide
@@ -263,9 +252,9 @@ const About = () => {
 
 			<div
              className="bg-cover bg-center h-[90vh] flex items-center justify-center"
-             style={{ backgroundImage: "url('Ourateam.jpg')" }}
+             style={{ backgroundImage: "url('ourteam.jpg')" }}
            >
-             <h1 className="text-black text-6xl font-bold">Our Team</h1>
+             {/* <h1 className="text-black text-6xl font-bold">Our Team</h1> */}
            </div>
 
 
