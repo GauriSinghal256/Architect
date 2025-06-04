@@ -9,7 +9,7 @@ const projects = [
 		description:
 			'A 42-story mixed-use skyscraper featuring sustainable design elements and a distinctive silhouette on the city skyline.',
 		image:
-			'/aa1.webp',
+			'/projectSection/aa1.webp',
 		category: 'Commercial',
 		location: 'Mumbai, India',
 	},
@@ -19,7 +19,7 @@ const projects = [
 		description:
 			'Luxury eco-friendly villas designed with passive cooling systems and integrated with the natural landscape.',
 		image:
-			'aa2.webp',
+			'/projectSection/aa2.webp',
 		category: 'Residential',
 		location: 'Goa, India',
 	},
@@ -29,7 +29,7 @@ const projects = [
 		description:
 			'A cultural hub featuring a concert hall, art galleries, and educational spaces with stunning acoustics and lighting design.',
 		image:
-			'aa3.webp',
+			'/projectSection/aa3.webp',
 		category: 'Cultural',
 		location: 'Delhi, India',
 	},
