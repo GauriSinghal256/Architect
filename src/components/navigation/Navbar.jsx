@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img className='h-8 w-8' src="AA.png" alt="Anshul Architects Logo" />
+          <img className='h-8 w-8' src="/AA.png" alt="Anshul Architects Logo" />
           <span className="text-xl font-heading font-semibold text-gray-400">Anshul Architects</span>
         </Link>
 
