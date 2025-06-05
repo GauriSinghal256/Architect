@@ -55,102 +55,73 @@ const Services = () => {
 
 			{/* Services Overview */}
 			<section className="py-16 bg-white">
-				<div className="container-custom">
-					<SectionTitle
-						title="What We Offer"
-						subtitle="Our expertise"
-						center={true}
-					/>
+	<div className="container-custom">
+		<SectionTitle
+			title="What We Offer"
+			subtitle="Our expertise"
+			center={true}
+		/>
 
-					<AnimatedSection>
-						<p className="text-lg text-primary-700 max-w-4xl mx-auto text-center mb-16">
-							At Anshul Architects, we provide a comprehensive range of
-							architectural services designed to address the unique needs of
-							each project. From initial concept to final construction, our
-							experienced team delivers innovative solutions with precision and
-							care.
-						</p>
-					</AnimatedSection>
+		<AnimatedSection>
+			<p className="text-lg text-primary-700 max-w-4xl mx-auto text-center mb-16">
+				At Anshul Architects, we provide a comprehensive range of
+				architectural services designed to address the unique needs of
+				each project. From initial concept to final construction, our
+				experienced team delivers innovative solutions with precision and
+				care.
+			</p>
+		</AnimatedSection>
 
-					{/* Services List */}
-					<div className="space-y-24">
-						{services.map((service, index) => (
-							<Link to={`/services/${service.id}`} key={service.id}>
-								<motion.div
-									initial={{ opacity: 0, y: 60 }}
-									whileInView={{ opacity: 1, y: 0 }}
-									viewport={{ once: true, amount: 0.2 }}
-									transition={{ duration: 0.8, delay: index * 0.15 }}
-									className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-										index % 2 === 0 ? "" : "lg:flex-row-reverse"
-									}`}
-									whileHover={{
-										scale: 1.03,
-										boxShadow: "0 8px 32px rgba(30,41,59,0.10)",
-										background:
-											"linear-gradient(135deg,rgba(240,244,255,0.18) 0%,rgba(255,255,255,0.08) 100%)",
-									}}
-								>
-									{/* Image */}
-									<AnimatedSection
-										direction={index % 2 === 0 ? "left" : "right"}
-									>
-										<div className="overflow-hidden rounded-lg shadow-lg group">
-											<motion.img
-												whileHover={{ scale: 1.05 }}
-												transition={{ duration: 0.8 }}
-												src={service.image}
-												alt={service.title}
-												className="w-full h-80 lg:h-96 object-cover transition-transform duration-700"
-											/>
-										</div>
-									</AnimatedSection>
+		{/* Services List */}
+		<div className="flex flex-col gap-24">
+			{services.map((service, index) => (
+				<div key={service.id}>
+					<Link to={`/services/${service.id}`}>
+						<motion.div
+							initial={{ opacity: 0, y: 60 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true, amount: 0.2 }}
+							transition={{ duration: 0.8, delay: index * 0.15 }}
+							className="flex flex-col items-center text-center gap-8"
+							whileHover={{
+								scale: 1.03,
+								boxShadow: "0 8px 32px rgba(30,41,59,0.10)",
+								background:
+									"linear-gradient(135deg,rgba(240,244,255,0.18) 0%,rgba(255,255,255,0.08) 100%)",
+							}}
+						>
+							{/* Image */}
+							<AnimatedSection>
+								<div className="overflow-hidden rounded-lg shadow-lg group">
+									<motion.img
+										whileHover={{ scale: 1.05 }}
+										transition={{ duration: 0.8 }}
+										src={service.image}
+										alt={service.title}
+										className="w-full h-80 lg:h-96 object-cover transition-transform duration-700"
+									/>
+								</div>
+							</AnimatedSection>
 
-									{/* Content */}
-									<AnimatedSection
-										direction={index % 2 === 0 ? "right" : "left"}
-										delay={0.2}
-									>
-										<h2 className="text-3xl font-heading font-semibold mb-4 group-hover:text-primary-800 transition-colors duration-300">
-											{service.title}
-										</h2>
-										<p className="text-primary-700 mb-6 group-hover:text-gray-500 transition-colors duration-300">
-											{service.description}
-										</p>
-
-										<h3 className="text-xl font-heading font-medium mb-4">
-											What We Provide:
-										</h3>
-										<ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
-											{service.features.map((feature, idx) => (
-												<li key={idx} className="flex items-center">
-													<svg
-														className="w-5 h-5 text-primary-800 mr-2 flex-shrink-0"
-														fill="none"
-														stroke="currentColor"
-														viewBox="0 0 24 24"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															strokeWidth="2"
-															d="M5 13l4 4L19 7"
-														></path>
-													</svg>
-													<span className="text-primary-700">
-														{feature}
-													</span>
-												</li>
-											))}
-										</ul>
-									</AnimatedSection>
-								</motion.div>
-							</Link>
-						))}
-					</div>
+							{/* Title + Description */}
+							<AnimatedSection delay={0.2}>
+								<div className="max-w-2xl">
+									<h2 className="text-3xl font-heading font-semibold mb-4 group-hover:text-primary-800 transition-colors duration-300">
+										{service.title}
+									</h2>
+									<p className="text-primary-700 group-hover:text-gray-500 transition-colors duration-300">
+										{service.description}
+									</p>
+								</div>
+							</AnimatedSection>
+						</motion.div>
+					</Link>
 				</div>
-			</section>
+			))}
+		</div>
+	</div>
+</section>
+
 
 			{/* Process Section */}
 			<section className="py-16 bg-primary-50">
