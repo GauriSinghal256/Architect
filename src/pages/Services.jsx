@@ -1,108 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import SectionTitle from "../components/ui/SectionTitle";
 import AnimatedSection from "../components/ui/AnimatedSection";
-
-
-// Sample services data
-const services = [
-	{
-		id: 1,
-		title: "Architectural Design",
-		description:
-			"We create innovative and functional architectural designs that balance aesthetics, usability, and sustainability. Our comprehensive approach considers every aspect of your project, from conceptual sketches to detailed construction documents.",
-		image:
-			"\house.jpg",
-		features: [
-			"Conceptual design development",
-			"Schematic design and modeling",
-			"Design development and documentation",
-			"Material and finish selection",
-			"Construction documents and specifications",
-			"Building information modeling (BIM)",
-		],
-	},
-	{
-		id: 2,
-		title: "Interior Design",
-		description:
-			"Our interior design services transform spaces to reflect your style, enhance functionality, and improve quality of life. We meticulously plan every detail, from space planning to furniture selection, creating harmonious interiors that inspire.",
-		image:
-			"https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200",
-		features: [
-			"Space planning and layouts",
-			"Material and finish selection",
-			"Custom furniture design",
-			"Lighting design",
-			"Art and accessory curation",
-			"Sustainable interior solutions",
-		],
-	},
-	{
-		id: 3,
-		title: "Urban Planning",
-		description:
-			"We develop comprehensive urban planning solutions that create vibrant, sustainable communities. Our approach integrates transportation, infrastructure, environmental considerations, and social dynamics to create places where people thrive.",
-		image:
-			"UrbanPlanning.jpg",
-		features: [
-			"Master planning",
-			"Urban design guidelines",
-			"Mixed-use development planning",
-			"Transit-oriented development",
-			"Public space design",
-			"Sustainable neighborhood planning",
-		],
-	},
-	{
-		id: 4,
-		title: "Renovation",
-		description:
-			"We breathe new life into existing structures through thoughtful renovation and restoration. Whether updating a historic building or reimagining a modern space, we balance respect for the original architecture with contemporary needs and functions.",
-		image:
-			"Renovation.jpg",
-		features: [
-			"Building assessment and documentation",
-			"Historical preservation",
-			"Adaptive reuse strategies",
-			"Modern upgrades and retrofitting",
-			"Energy efficiency improvements",
-			"Phased renovation planning",
-		],
-	},
-	{
-		id: 5,
-		title: "Construction Management",
-		description:
-			"Our construction management services ensure your project is built to the highest standards, on time and within budget. We coordinate all aspects of construction, from contractor selection to final inspection, providing peace of mind throughout the process.",
-		image:
-			"aacw.png",
-		features: [
-			"Contractor selection and bidding",
-			"Schedule development and monitoring",
-			"Budget management",
-			"Quality control inspections",
-			"Construction administration",
-			"Project documentation and reporting",
-		],
-	},
-	{
-		id: 6,
-		title: "Evaluation",
-		description:
-			"Evaluation in architectural design is a critical phase where proposed designs are assessed for their functionality, aesthetics, sustainability, and compliance with user needs and regulatory standards. This stage ensures the design effectively meets its intended purpose before moving into detailed development or construction.",
-		image:
-			"https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1200",
-		features: [
-			"Functional performance analysis",
-		    "Aesthetic and spatial quality review",
-		    "User feedback and usability assessment",
-		    "Compliance with codes and regulations",
-		    "Environmental and sustainability evaluation",
-		    "Cost-effectiveness and feasibility studies"
-		],
-	},
-];
+import services from "../data/services";
 
 const Services = () => {
 	// Page transition variants
@@ -174,79 +75,78 @@ const Services = () => {
 					{/* Services List */}
 					<div className="space-y-24">
 						{services.map((service, index) => (
-							
-							<motion.div
-								key={service.id}
-								initial={{ opacity: 0, y: 60 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true, amount: 0.2 }}
-								transition={{ duration: 0.8, delay: index * 0.15 }}
-								className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-									index % 2 === 0 ? "" : "lg:flex-row-reverse"
-								}`}
-								whileHover={{
-									scale: 1.03,
-									boxShadow: "0 8px 32px rgba(30,41,59,0.10)",
-									background:
-										"linear-gradient(135deg,rgba(240,244,255,0.18) 0%,rgba(255,255,255,0.08) 100%)",
-								}}
-							>
-								{/* Image */}
-								
-								<AnimatedSection
-									direction={index % 2 === 0 ? "left" : "right"}
+							<Link to={`/services/${service.id}`} key={service.id}>
+								<motion.div
+									initial={{ opacity: 0, y: 60 }}
+									whileInView={{ opacity: 1, y: 0 }}
+									viewport={{ once: true, amount: 0.2 }}
+									transition={{ duration: 0.8, delay: index * 0.15 }}
+									className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+										index % 2 === 0 ? "" : "lg:flex-row-reverse"
+									}`}
+									whileHover={{
+										scale: 1.03,
+										boxShadow: "0 8px 32px rgba(30,41,59,0.10)",
+										background:
+											"linear-gradient(135deg,rgba(240,244,255,0.18) 0%,rgba(255,255,255,0.08) 100%)",
+									}}
 								>
-									<div className="overflow-hidden rounded-lg shadow-lg group">
-										<motion.img
-											whileHover={{ scale: 1.05 }}
-											transition={{ duration: 0.8 }}
-											src={service.image}
-											alt={service.title}
-											className="w-full h-80 lg:h-96 object-cover transition-transform duration-700"
-										/>
-									</div>
-								</AnimatedSection>
+									{/* Image */}
+									<AnimatedSection
+										direction={index % 2 === 0 ? "left" : "right"}
+									>
+										<div className="overflow-hidden rounded-lg shadow-lg group">
+											<motion.img
+												whileHover={{ scale: 1.05 }}
+												transition={{ duration: 0.8 }}
+												src={service.image}
+												alt={service.title}
+												className="w-full h-80 lg:h-96 object-cover transition-transform duration-700"
+											/>
+										</div>
+									</AnimatedSection>
 
-								{/* Content */}
-								<AnimatedSection
-									direction={index % 2 === 0 ? "right" : "left"}
-									delay={0.2}
-								>
-									<h2 className="text-3xl font-heading font-semibold mb-4 group-hover:text-primary-800 transition-colors duration-300">
-										{service.title}
-									</h2>
-									<p className="text-primary-700 mb-6 group-hover:text-gray-500 transition-colors duration-300">
-										{service.description}
-									</p>
+									{/* Content */}
+									<AnimatedSection
+										direction={index % 2 === 0 ? "right" : "left"}
+										delay={0.2}
+									>
+										<h2 className="text-3xl font-heading font-semibold mb-4 group-hover:text-primary-800 transition-colors duration-300">
+											{service.title}
+										</h2>
+										<p className="text-primary-700 mb-6 group-hover:text-gray-500 transition-colors duration-300">
+											{service.description}
+										</p>
 
-									<h3 className="text-xl font-heading font-medium mb-4">
-										What We Provide:
-									</h3>
-									<ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
-										{service.features.map((feature, idx) => (
-											<li key={idx} className="flex items-center">
-												<svg
-													className="w-5 h-5 text-primary-800 mr-2 flex-shrink-0"
-													fill="none"
-													stroke="currentColor"
-													viewBox="0 0 24 24"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														strokeLinecap="round"
-														strokeLinejoin="round"
-														strokeWidth="2"
-														d="M5 13l4 4L19 7"
-													></path>
-												</svg>
-												<span className="text-primary-700">
-													{feature}
-												</span>
-											</li>
-										))}
-									</ul>
-								</AnimatedSection>
-							</motion.div>
+										<h3 className="text-xl font-heading font-medium mb-4">
+											What We Provide:
+										</h3>
+										<ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+											{service.features.map((feature, idx) => (
+												<li key={idx} className="flex items-center">
+													<svg
+														className="w-5 h-5 text-primary-800 mr-2 flex-shrink-0"
+														fill="none"
+														stroke="currentColor"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															strokeLinecap="round"
+															strokeLinejoin="round"
+															strokeWidth="2"
+															d="M5 13l4 4L19 7"
+														></path>
+													</svg>
+													<span className="text-primary-700">
+														{feature}
+													</span>
+												</li>
+											))}
+										</ul>
+									</AnimatedSection>
+								</motion.div>
+							</Link>
 						))}
 					</div>
 				</div>
@@ -375,7 +275,7 @@ const Services = () => {
 			<section
 				className="relative py-24 w-full overflow-hidden"
 				style={{
-					backgroundImage: "url('abc.jpg')", // Place your beautiful image in public/cta-bg.jpg
+					backgroundImage: "url('abc.jpg')",
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
@@ -390,19 +290,19 @@ const Services = () => {
 						</h2>
 						<p className="text-xl text-primary-100 max-w-2xl mx-auto mb-8 drop-shadow">
 							Contact us today to schedule a consultation and discuss how we can
-							bringe your architectural vision to life.
+							bring your architectural vision to life.
 						</p>
 						<motion.div
 							whileHover={{ scale: 1.07 }}
 							transition={{ duration: 0.3 }}
 							className="inline-block"
 						>
-							<a
-								href="/contact"
+							<Link
+								to="/contact"
 								className="btn bg-white text-primary-800 hover:bg-primary-50 shadow-xl px-8 py-4 text-lg rounded-full transition-all duration-300"
 							>
 								Get in Touch
-							</a>
+							</Link>
 						</motion.div>
 					</AnimatedSection>
 				</div>
