@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import services from "../data/services"; // or export `services` array to a separate file
+import services from "./services"; // correct path
 
 const ServiceDetail = () => {
 	const { id } = useParams();
