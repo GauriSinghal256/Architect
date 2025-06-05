@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import ScrollToTop from './components/ui/ScrollToTop';
 import ServiceDetail from './pages/ServiceDetail';
+import MemberDetail from './pages/MemberDetail';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:id" element={<ProjectDetail />} />
           <Route path="about" element={<About />} />
+          <Route path="/team/:id" element={<MemberDetail />} />
           <Route path="services" element={<Services />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="contact" element={<Contact />} />
