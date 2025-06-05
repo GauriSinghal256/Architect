@@ -38,7 +38,7 @@ const Layout = () => {
                 <path d="M9 23V9H16L23 16V23H9Z" stroke="white" strokeWidth="2"/>
                 <path d="M16 9V16H23" stroke="white" strokeWidth="2"/>
               </svg> */}
-              <img className='w-16 h-16 mx-auto mb-4' src="AA.png" alt="" />
+              <img className='w-16 h-16 mx-auto mb-4' src="/AA.png" alt="" />
               <h2 className="text-2xl font-heading font-medium">Anshul Architects</h2>
             </motion.div>
           </motion.div>
