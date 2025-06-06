@@ -1,6 +1,6 @@
 import aa2 from "../assets/projectSection/aa2.webp"; // moved from public to src/assets
-import aaps1 from "../assets/projectSection/aaps1.jpg";
-import aaps2 from "../assets/projectSection/aaps2.jpg";
+const aaps1 = "/projectSection/aaps1.jpg";
+const aaps2 = "/projectSection/aaps1.jpg";
 import aa6 from "../assets/aa6.webp";
 import m3 from "../assets/m3.png";
 import photo3 from "../assets/photo3.jpg";
