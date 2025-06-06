@@ -1,7 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom'; 
 
-const ProjectCard = ({ project, index }) => {
+
+
+const ProjectCard = ({ project, index, }) => {
+
+  const navigate = useNavigate(); 
+
+  const handleReadMore = () => {
+    navigate(`/projects/${project.id}`);
+  };
   const cardVariants = {
     hidden: { opacity: 0, y: 40, scale: 0.98 },
     visible: { 
@@ -85,16 +94,19 @@ const ProjectCard = ({ project, index }) => {
             {project.location}
           </span>
         </motion.div>
+        {/* <Link href="/projectpages/page1">
+        <button>read more</button>
+        </Link> */}
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileHover={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
           className="overflow-hidden"
         >
-          <span className="text-primary-600 text-sm font-medium group-hover:underline">
-            View Details →
-          </span>
         </motion.div>
+        <button onClick={handleReadMore} className=" text-sm text-gray-600 font-medium hover:underline">
+            View Details →
+          </button>
       </div>
     </motion.div>
   );
