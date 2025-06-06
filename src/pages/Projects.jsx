@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../components/ui/SectionTitle';
 import ProjectCard from '../components/ui/ProjectCard';
 
+
 // Sample project data (would normally come from an API)
 const allProjects = [
 	{
@@ -133,6 +134,7 @@ const Projects = () => {
 	};
 
 	return (
+		<>
 		<motion.div
 			initial="initial"
 			animate="in"
@@ -184,6 +186,7 @@ const Projects = () => {
 							{filteredProjects.map((project, index) => (
 								<ProjectCard key={project.id} project={project} index={index} />
 							))}
+							
 						</div>
 					) : (
 						<div className="text-center py-12">
@@ -192,8 +195,11 @@ const Projects = () => {
 						</div>
 					)}
 				</div>
+			
 			</section>
 		</motion.div>
+		
+		</>
 	);
 };
 
