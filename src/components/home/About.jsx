@@ -3,26 +3,23 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 
-const fadeIn = (direction = 'up', delay = 0) => {
-  const variants = {
-    hidden: {
-      opacity: 0,
-      x: direction === 'left' ? -50 : direction === 'right' ? 50 : 0,
-      y: direction === 'up' ? 50 : direction === 'down' ? -50 : 0,
+const fadeIn = (direction = 'up', delay = 0) => ({
+  hidden: {
+    opacity: 0,
+    x: direction === 'left' ? -50 : direction === 'right' ? 50 : 0,
+    y: direction === 'up' ? 50 : direction === 'down' ? -50 : 0,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      delay,
+      duration: 0.6,
+      ease: 'easeOut',
     },
-    show: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        delay,
-        duration: 0.6,
-        ease: 'easeOut',
-      },
-    },
-  };
-  return variants;
-};
+  },
+});
 
 const About = () => {
   const stats = [
@@ -35,8 +32,7 @@ const About = () => {
     <section className="section-padding bg-primary-50">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
-          {/* Left Image Section */}
+          {/* Image Section */}
           <motion.div
             variants={fadeIn('left', 0)}
             initial="hidden"
@@ -64,17 +60,15 @@ const About = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Text Section */}
+          {/* Text Section */}
           <motion.div
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
           >
-            <SectionTitle
-              title="About Anshul Architects"
-              subtitle="Our story"
-            />
+            <SectionTitle title="About Anshul Architects" subtitle="Our story" />
+
             <motion.p
               className="text-primary-600 mb-5"
               variants={fadeIn('up', 0.3)}
@@ -105,7 +99,7 @@ const About = () => {
               {stats.map((item, index) => (
                 <motion.div
                   key={item.label}
-                  className="bg-white p-5 rounded-lg shadow-sm"
+                  className="bg-white p-5 rounded-lg shadow-sm text-center"
                   variants={fadeIn('up', 0.5 + index * 0.2)}
                 >
                   <div className="text-3xl font-bold text-primary-800 mb-2">{item.number}</div>
@@ -114,12 +108,13 @@ const About = () => {
               ))}
             </motion.div>
 
-            {/* Button */}
+            {/* Button Centered on Mobile Only */}
             <motion.div
               variants={fadeIn('right', 0.8)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
+              className="flex justify-center md:justify-start"
             >
               <Link
                 to="/about"
@@ -138,7 +133,7 @@ const About = () => {
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  ></path>
+                  />
                 </svg>
               </Link>
             </motion.div>

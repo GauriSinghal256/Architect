@@ -6,6 +6,7 @@ import AnimatedSection from "../components/ui/AnimatedSection";
 import { useInView } from "react-intersection-observer";
 import teamMembers from "../data/teamData";
 import { Link } from "react-router-dom";
+import AnshulProfile from "./AnshulProfile";
 
 
 const About = () => {
@@ -217,66 +218,28 @@ const About = () => {
       </motion.div>
     </div>
 
-	<section className="py-16 bg-gray-50">
-    <div className="container-custom max-w-7xl mx-auto rounded-2xl shadow-lg bg-white overflow-hidden flex flex-col md:flex-row items-center md:items-start gap-12 p-10">
-      {/* Image with animation */}
-      <motion.div
-        className="w-full md:w-1/3 rounded-xl overflow-hidden shadow-xl flex-shrink-0"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <img
-          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="Anshul Sharma"
-          className="w-full h-full object-cover rounded-xl"
-        />
-      </motion.div>
-
-      {/* Text content with animation */}
-      <motion.div
-        className="w-full md:w-2/3 bg-gray-100 rounded-xl p-8"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-2">Anshul Sharma</h2>
-        <p className="text-xl text-indigo-600 font-semibold mb-6">Master in Architecture</p>
-
-        <p className="text-gray-700 leading-relaxed mb-6">
-          With over 18 years of experience in the field of architecture, Anshul Sharma has established himself as a seasoned professional with a passion for creating functional and aesthetically pleasing spaces. Holding a Master's degree in Architecture, Anshul has honed his expertise in designing and developing projects that cater to diverse needs and requirements.
-        </p>
-
-        <section className="mb-6">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-3 border-b border-indigo-300 pb-2">Specialization</h3>
-          <ul className="list-disc list-inside space-y-1 text-gray-700">
-            <li>Institutional design: Schools, universities, and educational institutions</li>
-            <li>Hospital design: Healthcare facilities, hospitals, and clinics</li>
-            <li>Residential design: Luxury homes, apartments, and housing complexes</li>
-            <li>Spatial planning: Efficient use of space to enhance functionality and user experience</li>
-          </ul>
-        </section>
-
-        <section className="mb-6">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-3 border-b border-indigo-300 pb-2">Comprehensive Services</h3>
-          <ul className="list-disc list-inside space-y-1 text-gray-700">
-            <li>Architectural design: Creating innovative and functional designs for buildings and spaces</li>
-            <li>Structural design: Ensuring the stability and integrity of structures</li>
-            <li>Valuation: Providing expert opinions on property valuation</li>
-            <li>Interior design: Crafting beautiful and functional interiors for residential and commercial spaces</li>
-          </ul>
-        </section>
-
-        {/* <p className="text-gray-700 leading-relaxed mb-6">
-          Anshul's studio has a strong presence in the North belt of India, with projects and clients across various states. His team is equipped to handle projects of varying scales and complexities, from concept to completion.
-        </p>
-
-        <p className="text-gray-700 leading-relaxed">
-          Anshul's approach to architecture is centered around creating spaces that are not only functional but also sustainable, user-friendly, and visually appealing. He believes in understanding the unique needs and requirements of each client and project, and tailoring his design solutions accordingly. With a keen eye for detail and a commitment to delivering high-quality projects, Anshul has earned a reputation as a trusted and reliable architect in the industry.
-        </p> */}
-      </motion.div>
-    </div>
-  </section>
+	 <section className="py-16 bg-gray-50">
+      <div className="max-w-xl mx-auto px-4">
+        <Link to="/team/anshul">
+          <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+            <div className="aspect-[4/3] w-full overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Anshul Sharma"
+                className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <div className="p-6 text-center bg-gradient-to-r from-gray-100 to-gray-200">
+              <h2 className="text-3xl font-bold text-gray-900">Anshul Sharma</h2>
+              <p className="text-lg text-indigo-600 font-semibold mt-1">
+                Master in Architecture
+              </p>
+              <p className="text-sm text-gray-700 mt-1">Founder</p>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </section>
 
 
             
