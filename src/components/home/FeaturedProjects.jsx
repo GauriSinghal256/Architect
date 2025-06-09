@@ -5,11 +5,11 @@ import SectionTitle from '../ui/SectionTitle';
 const projects = [
 	{
 		id: 1,
-		title: 'Azure Horizon Tower',
+		title: 'Tagore Public School',
 		description:
-			'A 42-story mixed-use skyscraper featuring sustainable design elements and a distinctive silhouette on the city skyline.',
+			'This modern school building design combines clean lines and warm textures, reflecting a balance of innovation and tradition.',
 		image:
-			'/projectSection/aa1.webp',
+			'/projectSection/p4.jpeg',
 		category: '',
 		location: '',
 	},

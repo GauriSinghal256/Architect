@@ -55,9 +55,9 @@ const ProjectCard = ({ project, index, }) => {
       whileInView="visible"
       whileHover="hover"
       viewport={{ once: true }}
-      className="group overflow-hidden bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+      className="group overflow-hidden  bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
     >
-      <div className="relative overflow-hidden h-56">
+      <div className="relative overflow-hidden h-[350px] ">
         <motion.img
           variants={imageVariants}
           src={project.image}
@@ -73,38 +73,24 @@ const ProjectCard = ({ project, index, }) => {
       <div className="p-4">
         <motion.h3 
           variants={textVariants}
-          className="text-lg font-heading font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-300"
+          className="text-2xl font-heading font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300"
         >
           {project.title}
         </motion.h3>
-        <motion.p 
-          variants={textVariants}
-          className="text-gray-600 text-sm line-clamp-2 mt-1 mb-3"
-        >
-          {project.description}
-        </motion.p>
-        <motion.div 
-          variants={tagVariants}
-          className="flex gap-2 mb-3"
-        >
-          <span className="bg-primary-100 text-primary-800 px-2 py-0.5 text-xs font-medium rounded-full">
-            {project.category}
-          </span>
-          <span className="bg-primary-100 text-primary-800 px-2 py-0.5 text-xs font-medium rounded-full">
-            {project.location}
-          </span>
-        </motion.div>
-        {/* <Link href="/projectpages/page1">
-        <button>read more</button>
-        </Link> */}
+        
+        
+        
+        {/* <button>read more</button> */}
+        
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileHover={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
-          className="overflow-hidden"
+          className="overflow-hidden mt-3"
         >
+    
         </motion.div>
-        <button onClick={handleReadMore} className=" text-sm text-gray-600 font-medium hover:underline">
+        <button onClick={handleReadMore} className=" text-sm text-primary-600 font-medium hover:underline">
             View Details →
           </button>
       </div>
