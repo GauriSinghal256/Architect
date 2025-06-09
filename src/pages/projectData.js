@@ -42,9 +42,9 @@ import p4m9 from "../assets/project4/m9.jpeg";
 export const projectsData = [
   {
     id: 1,
-    title: "Azure Horizon Tower",
+    title: "House Interior And Designs",
     description:
-      "A 42-story mixed-use skyscraper featuring sustainable design elements and a distinctive silhouette on the city skyline.",
+      "At House Interior and Designs, we turn spaces into experiences. Our team blends creativity, functionality, and elegance to craft interiors that reflect your personality and elevate everyday living. Whether you’re designing a cozy apartment, a luxurious villa, or renovating a single room, we bring visionary ideas to life with precision and passion.",
 
     image: p1m1,
     gallery: [p1m2, p1m3, p1m4, p1m5, p1m6, p1m7, p1m8, p1m9, p1m10],
