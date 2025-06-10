@@ -5,11 +5,11 @@ import SectionTitle from '../ui/SectionTitle';
 const projects = [
 	{
 		id: 1,
-		title: 'Tagore Public School',
+		title: 'Architecture Designing',
 		description:
-			'This modern school building design combines clean lines and warm textures, reflecting a balance of innovation and tradition.',
+			'This architecture and interior design combines clean lines and warm textures, reflecting a balance of innovation and tradition.',
 		image:
-			'/projectSection/p4.jpeg',
+			'/house.jpg',
 		category: '',
 		location: '',
 	},

@@ -69,7 +69,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "Tagore Public School",
+    title: "School Interior",
     description:
       "This modern school building design combines clean lines and warm textures, reflecting a balance of innovation and tradition. ",
 
