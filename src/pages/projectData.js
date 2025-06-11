@@ -51,7 +51,7 @@ export const projectsData = [
       "At House Interior and Designs, we turn spaces into experiences. Our team blends creativity, functionality, and elegance to craft interiors that reflect your personality and elevate everyday living.",
 
     image: p1m1,
-    gallery: [p1m2, p1m3, p1m4, p1m5, p1m6, p1m7, p1m8, p1m9, p1m10],
+    gallery1: [p1m2, p1m3, p1m4, p1m5, p1m6, p1m7, p1m8, p1m9, p1m10],
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ export const projectsData = [
       "This modern office space showcases a creative world map mural featuring iconic global landmarks, symbolizing international reach and cultural diversity. ",
 
     image: p2m1,
-    gallery: [p2m2, p2m3, p2m4, p2m5, p2m6, p2m7],
+    gallery1: [p2m2, p2m3, p2m4, p2m5, p2m6, p2m7],
   },
   {
     id: 3,
@@ -69,7 +69,7 @@ export const projectsData = [
       "This elegant interior design features a harmonious blend of warm tones and modern-classic elements, creating a luxurious yet inviting living space.",
 
     image: p3m1,
-    gallery: [p3m2, p3m3, p3m4, p3m5, p3m6, p3m7, p3m8, p3m9, p3m10],
+    gallery1: [p3m2, p3m3, p3m4, p3m5, p3m6, p3m7, p3m8, p3m9, p3m10],
   },
   {
     id: 4,
