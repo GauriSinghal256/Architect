@@ -41,7 +41,6 @@ import p4m5 from "../assets/project4/m5.png";
 import p4m6 from "../assets/project4/m6.png";
 import p4m7 from "../assets/project4/m7.png";
 
-
 // Sample project data (would normally come from an API)
 export const projectsData = [
   {
@@ -78,8 +77,8 @@ export const projectsData = [
       "This modern school building design combines clean lines and warm textures, reflecting a balance of innovation and tradition. ",
 
     image: p4m1,
-    gallery1: [p4m2, p4m3, p4m4,],
-    gallery2: [p4v1, p4v2, p4v3,],
+    gallery1: [p4m2, p4m3, p4m4],
+    gallery2: [p4v1, p4v2, p4v3],
     gallery3: [p4m5, p4m6, p4m7],
   },
 

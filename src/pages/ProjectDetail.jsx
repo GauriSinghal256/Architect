@@ -94,18 +94,18 @@ const ProjectDetail = () => {
       </section>
 
       {/* Project Gallery */}
+
       <section className="py-16 bg-primary-50">
         <div className="container-custom">
           <SectionTitle
             title="Project Gallery"
             subtitle="Visual Journey"
             center={true}
-
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {project.gallery1.map((image, index) => (
-              <AnimatedSection key={index} delay={index * 0.1}>
+            {project.gallery1?.map((image, index) => (
+              <AnimatedSection key={`g1-${index}`} delay={index * 0.1}>
                 <div className="overflow-hidden rounded-lg shadow-lg shadow-slate-600">
                   <motion.img
                     whileHover={{ scale: 1.05 }}
@@ -117,8 +117,9 @@ const ProjectDetail = () => {
                 </div>
               </AnimatedSection>
             ))}
-            {project.gallery2.map((video, index) => (
-              <AnimatedSection key={index} delay={index * 0.1}>
+
+            {project.gallery2?.map((video, index) => (
+              <AnimatedSection key={`g2-${index}`} delay={index * 0.1}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6 }}
@@ -130,7 +131,6 @@ const ProjectDetail = () => {
                     muted
                     loop
                     playsInline
-
                     onMouseEnter={(e) => e.target.play()}
                     onMouseLeave={(e) => e.target.pause()}
                   />
@@ -138,8 +138,8 @@ const ProjectDetail = () => {
               </AnimatedSection>
             ))}
 
-            {project.gallery3.map((image, index) => (
-              <AnimatedSection key={index} delay={index * 0.1}>
+            {project.gallery3?.map((image, index) => (
+              <AnimatedSection key={`g3-${index}`} delay={index * 0.1}>
                 <div className="overflow-hidden rounded-lg shadow-lg shadow-slate-600">
                   <motion.img
                     whileHover={{ scale: 1.05 }}
@@ -151,10 +151,10 @@ const ProjectDetail = () => {
                 </div>
               </AnimatedSection>
             ))}
-
           </div>
         </div>
       </section>
+
 
       {/* Next Project CTA */}
       <section className="py-16 bg-white">
