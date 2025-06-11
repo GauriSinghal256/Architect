@@ -73,7 +73,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "School Interior",
+    title: "Institutional Interior",
     description:
       "This modern school building design combines clean lines and warm textures, reflecting a balance of innovation and tradition. ",
 

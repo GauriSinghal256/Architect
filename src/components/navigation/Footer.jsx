@@ -65,13 +65,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li className="text-primary-200 hover:text-white transition-colors">Architectural Design</li>
-              <li className="text-primary-200 hover:text-white transition-colors">Interior Design</li>
-              <li className="text-primary-200 hover:text-white transition-colors">Urban Planning</li>
-              <li className="text-primary-200 hover:text-white transition-colors">Landscape Design</li>
-              <li className="text-primary-200 hover:text-white transition-colors">Renovation</li>
-              <li className="text-primary-200 hover:text-white transition-colors">Construction Management</li>
-              <li className="text-primary-200 hover:text-white transition-colors">Evaluation</li>
+              <li className="text-primary-200 hover:text-white transition-colors"><Link to="/">Architectural Design</Link>  </li>
+              <li className="text-primary-200 hover:text-white transition-colors"><Link to="/projects">Interior Design</Link></li>
+              <li className="text-primary-200 hover:text-white transition-colors"><Link to="/services">Urban Planning</Link></li>
+              <li className="text-primary-200 hover:text-white transition-colors"> <Link to="/projects">Landscape Design</Link></li>
+              <li className="text-primary-200 hover:text-white transition-colors">  <Link to="/projects">Renovation</Link></li>
+              <li className="text-primary-200 hover:text-white transition-colors"> <Link to="/services">Construction Management</Link></li>
+              <li className="text-primary-200 hover:text-white transition-colors"> <Link to='/contact'>Evaluation</Link></li>
             </ul>
           </div>
 
@@ -80,8 +80,16 @@ const Footer = () => {
             <h3 className="text-lg font-heading font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="w-5 h-5 mt-1 text-primary-200" />
-                <span className="text-primary-200">Sco 8, Green Feild Market, opposite Sector 7, DD colony, Kurukshetra, Haryana 136118</span>
+                <a
+                  href="https://www.google.com/maps/place/Anshul+Architects/@29.9754069,76.8749724,17z/data=!3m1!4b1!4m6!3m5!1s0x390e46d95e07f587:0xc7ce3adc05951279!8m2!3d29.9754023!4d76.8775473!16s%2Fg%2F11d_7qkddk?entry=ttu&g_ep=EgoyMDI1MDYwOC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaMapMarkerAlt className="w-5 h-5 mt-1 text-primary-200 hover:text-primary-400 cursor-pointer" />
+                </a>
+                <span className="text-primary-200">
+                  Sco 8, Green Feild Market, opposite Sector 7, DD colony, Kurukshetra, Haryana 136118
+                </span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="w-5 h-5 text-primary-200" />
