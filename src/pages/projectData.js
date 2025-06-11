@@ -1,4 +1,4 @@
-// home interior images
+// House Residential Interior And Designs images
 import p1m1 from "../assets/project1/m1.jpeg";
 import p1m2 from "../assets/project1/m2.jpeg";
 import p1m3 from "../assets/project1/m3.jpeg";
@@ -9,7 +9,7 @@ import p1m7 from "../assets/project1/m7.jpeg";
 import p1m8 from "../assets/project1/m8.jpeg";
 import p1m9 from "../assets/project1/m9.jpeg";
 import p1m10 from "../assets/project1/m10.jpeg";
-// office interior images
+// commercial interior images
 import p2m1 from "../assets/project2/m1.jpeg";
 import p2m2 from "../assets/project2/m2.jpeg";
 import p2m3 from "../assets/project2/m3.jpeg";
@@ -29,14 +29,18 @@ import p3m8 from "../assets/project3/m8.jpeg";
 import p3m9 from "../assets/project3/m9.jpeg";
 import p3m10 from "../assets/project3/m10.jpeg";
 
-// school interior images
+// Institutional Interior images
 import p4m1 from "../assets/project4/m1.jpeg";
 import p4m2 from "../assets/project4/m2.jpeg";
-import p4m3 from "../assets/project4/m3.jpeg";
-import p4m5 from "../assets/project4/m5.jpeg";
-import p4m6 from "../assets/project4/m6.jpeg";
-import p4m7 from "../assets/project4/m7.jpeg";
-import p4m9 from "../assets/project4/m9.jpeg";
+import p4m3 from "../assets/project4/m3.png";
+import p4m4 from "../assets/project4/m4.png";
+import p4v1 from "../assets/project4/v1.mp4";
+import p4v2 from "../assets/project4/v2.mp4";
+import p4v3 from "../assets/project4/v3.mp4";
+import p4m5 from "../assets/project4/m5.png";
+import p4m6 from "../assets/project4/m6.png";
+import p4m7 from "../assets/project4/m7.png";
+
 
 // Sample project data (would normally come from an API)
 export const projectsData = [
@@ -74,7 +78,9 @@ export const projectsData = [
       "This modern school building design combines clean lines and warm textures, reflecting a balance of innovation and tradition. ",
 
     image: p4m1,
-    gallery: [p4m2, p4m3, p4m9, p4m5, p4m6, p4m7],
+    gallery1: [p4m2, p4m3, p4m4,],
+    gallery2: [p4v1, p4v2, p4v3,],
+    gallery3: [p4m5, p4m6, p4m7],
   },
 
   // More projects would follow the same pattern
