@@ -127,7 +127,6 @@ const ProjectDetail = () => {
                   <video
                     src={video}
                     className="w-full h-80 object-cover"
-                    autoPlay
                     muted
                     loop
                     playsInline
