@@ -5,23 +5,15 @@ import SectionTitle from '../components/ui/SectionTitle';
 import AnimatedSection from '../components/ui/AnimatedSection';
 import { projectsData } from './projectData';
 
-
-
-
-
 const ProjectDetail = () => {
   const { id } = useParams();
   const projectId = parseInt(id);
-
-  // Find the project matching the ID
   const project = projectsData.find(p => p.id === projectId);
 
-  // Scroll to top on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Handle project not found
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -36,17 +28,10 @@ const ProjectDetail = () => {
     );
   }
 
-  // Page transition variants
   const pageVariants = {
-    initial: {
-      opacity: 0,
-    },
-    in: {
-      opacity: 1,
-    },
-    out: {
-      opacity: 0,
-    },
+    initial: { opacity: 0 },
+    in: { opacity: 1 },
+    out: { opacity: 0 },
   };
 
   return (
@@ -61,21 +46,11 @@ const ProjectDetail = () => {
       <section className="relative mt-16 mx-10 h-[85vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/50 z-10" />
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
+          <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
         </div>
         <div className="container-custom relative z-10 text-white">
           <Link to="/projects" className=" inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             Back to Projects
@@ -85,23 +60,10 @@ const ProjectDetail = () => {
         </div>
       </section>
 
-      {/* Project Details */}
-      <section className=" bg-white">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          </div>
-        </div>
-      </section>
-
       {/* Project Gallery */}
-
       <section className="py-16 bg-primary-50">
         <div className="container-custom">
-          <SectionTitle
-            title="Project Gallery"
-            subtitle="Visual Journey"
-            center={true}
-          />
+          <SectionTitle title="Project Gallery" subtitle="Visual Journey" center={true} />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {project.gallery1?.map((image, index) => (
@@ -131,12 +93,11 @@ const ProjectDetail = () => {
                     muted
                     loop
                     playsInline
-                    onMouseEnter={(e) => {
-                      const video = e.target;
-                      video.play().catch(() => {}); // silently ignore AbortError
-                    }}
-                    onMouseLeave={(e) => {
-                      e.target.pause();
+                    onMouseEnter={(e) => e.target.play().catch(() => {})}
+                    onMouseLeave={(e) => e.target.pause()}
+                    onError={(e) => {
+                      console.error("Video failed to load:", e.target.src);
+                      e.target.style.display = "none";
                     }}
                   />
                 </motion.div>
@@ -160,8 +121,7 @@ const ProjectDetail = () => {
         </div>
       </section>
 
-
-      {/* Next Project CTA */}
+      {/* Next CTA */}
       <section className="py-16 bg-white">
         <div className="container-custom text-center">
           <h3 className="text-2xl font-heading font-semibold mb-4">Explore More Projects</h3>
