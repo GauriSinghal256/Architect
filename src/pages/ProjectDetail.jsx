@@ -131,8 +131,13 @@ const ProjectDetail = () => {
                     muted
                     loop
                     playsInline
-                    onMouseEnter={(e) => e.target.play()}
-                    onMouseLeave={(e) => e.target.pause()}
+                    onMouseEnter={(e) => {
+                      const video = e.target;
+                      video.play().catch(() => {}); // silently ignore AbortError
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.pause();
+                    }}
                   />
                 </motion.div>
               </AnimatedSection>
