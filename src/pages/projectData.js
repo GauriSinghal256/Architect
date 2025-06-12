@@ -33,7 +33,7 @@ import p3m10 from "../assets/project3/m10.jpeg";
 
 // Institutional Interior images/videos
 import p4m1 from "../assets/project4/m1.jpeg";
-import p4m2 from "../assets/project4/m2.png";
+import p4m2 from "../assets/project4/m2.jpeg";
 import p4m3 from "../assets/project4/m3.png";
 import p4m4 from "../assets/project4/m4.png";
 import p4v1 from "../assets/project4/v1.mp4";

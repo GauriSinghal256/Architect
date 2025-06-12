@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -10,8 +10,17 @@ const ProjectDetail = () => {
   const projectId = parseInt(id);
   const project = projectsData.find(p => p.id === projectId);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   if (!project) {
@@ -49,7 +58,7 @@ const ProjectDetail = () => {
           <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
         </div>
         <div className="container-custom relative z-10 text-white">
-          <Link to="/projects" className=" inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
+          <Link to="/projects" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -87,14 +96,15 @@ const ProjectDetail = () => {
                   transition={{ duration: 0.6 }}
                   className="overflow-hidden rounded-lg shadow-lg shadow-slate-600"
                 >
-                  <video
+                   <video
                     src={video}
                     className="w-full h-80 object-cover"
                     muted
                     loop
                     playsInline
-                    onMouseEnter={(e) => e.target.play().catch(() => {})}
-                    onMouseLeave={(e) => e.target.pause()}
+                    autoPlay={isMobile}
+                    onMouseEnter={!isMobile ? (e) => e.target.play().catch(() => {}) : undefined}
+                    onMouseLeave={!isMobile ? (e) => e.target.pause() : undefined}
                     onError={(e) => {
                       console.error("Video failed to load:", e.target.src);
                       e.target.style.display = "none";
