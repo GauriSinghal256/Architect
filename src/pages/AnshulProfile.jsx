@@ -26,7 +26,7 @@ const AnshulProfile = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/TeamMember/Anshul.jpg"
               alt="Anshul Sharma"
               className="rounded-2xl object-cover w-full h-96 shadow-lg"
             />
