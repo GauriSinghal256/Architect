@@ -1,10 +1,10 @@
-
+import Deepak from '../../public/TeamMember/Deepak.jpg'
 const teamMembers = [
   {
     id: "1",
     name: "Deepak Chaudhary",
     role: "Assistant Architect",
-    image: "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: Deepak,
     sections: [
       {
         title: "Overview",

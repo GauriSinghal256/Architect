@@ -6,7 +6,7 @@ import AnimatedSection from "../components/ui/AnimatedSection";
 import { useInView } from "react-intersection-observer";
 import teamMembers from "../data/teamData";
 import { Link } from "react-router-dom";
-import AnshulProfile from "./AnshulProfile";
+
 
 
 const About = () => {
@@ -224,7 +224,7 @@ const About = () => {
           <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 cursor-pointer">
             <div className="aspect-[4/3] w-full overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/TeamMember/Anshul.jpg"
                 alt="Anshul Sharma"
                 className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
               />
