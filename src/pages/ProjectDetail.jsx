@@ -75,6 +75,32 @@ const ProjectDetail = () => {
           <SectionTitle title="Project Gallery" subtitle="Visual Journey" center={true} />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {project.gallery2?.map((video, index) => (
+              <AnimatedSection key={`g2-${index}`} delay={index * 0.1}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.6 }}
+                  className="overflow-hidden rounded-lg shadow-lg shadow-slate-600"
+                >
+                  <video
+                    src={video}
+                    className="w-full h-80 object-cover"
+                    muted
+                    loop
+                    playsInline
+                    autoPlay={isMobile}
+                    onMouseEnter={!isMobile ? (e) => e.target.play().catch(() => { }) : undefined}
+                    onMouseLeave={!isMobile ? (e) => e.target.pause() : undefined}
+                    onError={(e) => {
+                      console.error("Video failed to load:", e.target.src);
+                      e.target.style.display = "none";
+                    }}
+                  />
+                </motion.div>
+              </AnimatedSection>
+            ))}
+
+
             {project.gallery1?.map((image, index) => (
               <AnimatedSection key={`g1-${index}`} delay={index * 0.1}>
                 <div className="overflow-hidden rounded-lg shadow-lg shadow-slate-600">
@@ -89,30 +115,7 @@ const ProjectDetail = () => {
               </AnimatedSection>
             ))}
 
-            {project.gallery2?.map((video, index) => (
-              <AnimatedSection key={`g2-${index}`} delay={index * 0.1}>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.6 }}
-                  className="overflow-hidden rounded-lg shadow-lg shadow-slate-600"
-                >
-                   <video
-                    src={video}
-                    className="w-full h-80 object-cover"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay={isMobile}
-                    onMouseEnter={!isMobile ? (e) => e.target.play().catch(() => {}) : undefined}
-                    onMouseLeave={!isMobile ? (e) => e.target.pause() : undefined}
-                    onError={(e) => {
-                      console.error("Video failed to load:", e.target.src);
-                      e.target.style.display = "none";
-                    }}
-                  />
-                </motion.div>
-              </AnimatedSection>
-            ))}
+
 
             {project.gallery3?.map((image, index) => (
               <AnimatedSection key={`g3-${index}`} delay={index * 0.1}>
