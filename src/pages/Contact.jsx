@@ -93,13 +93,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium text-lg mb-1">Email Us</h3>
                       <p className="text-primary-600">
-                        <a href="mailto:info@anshularchitects.com" className="hover:text-primary-800 transition-colors">
-                          info@anshularchitects.com
-                        </a>
-                      </p>
-                      <p className="text-primary-600">
                         <a href="mailto:projects@anshularchitects.com" className="hover:text-primary-800 transition-colors">
-                          projects@anshularchitects.com
+                          anshulsharma.upadhyay@gmail.com
                         </a>
                       </p>
                     </div>

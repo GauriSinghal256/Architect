@@ -43,7 +43,7 @@ He is skilled in architectural design, drafting, and project coordination, and i
     id: "2",
     name: "Neha Khan",
     role: "Assistant Architect",
-    image: "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/nehakhan.jpg",
     sections: [
       {
         title: "Overview",
@@ -81,7 +81,7 @@ She excels in architectural drafting, design development, and project coordinati
     id: "3",
     name: "Raj Deep",
     role: "Contractor",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "/rajdeep.jpg",
     sections: [
       {
         title: "Overview",
