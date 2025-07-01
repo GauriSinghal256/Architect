@@ -23,7 +23,7 @@ const fadeIn = (direction = 'up', delay = 0) => ({
 
 const About = () => {
   const stats = [
-    { number: "140+", label: "Projects Completed" },
+    { number: "150+", label: "Projects Completed" },
     { number: "18", label: "Design Awards" },
     { number: "20+", label: "Team Members" },
   ];
@@ -76,7 +76,7 @@ const About = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              "With over two decades of experience, Anshul Architects is recognized as one of the best architects in Kurukshetra. We focus on creating spaces that feel like home — whether it’s designing your dream house, planning a modern office, or crafting the perfect interior. We also offer Vastu consulting, industrial design, and landscape planning, ensuring every space is beautiful, balanced, and deeply personal."
+              Anshul Architects, led by Architect Anshul Sharma, delivers comprehensive design solutions across cities like Kurukshetra, Mohali, Karnal, Ambala, and Panipat. With offices in Kurukshetra (Anshul Architects) and Mohali (AKA Architects), the firm serves residential, commercial, institutional, and industrial projects.
             </motion.p>
 
             <motion.p
@@ -86,7 +86,7 @@ const About = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              Our team brings deep expertise and boundless creativity to every project. We believe architecture should not only be visually compelling but also environmentally thoughtful and tailored to your needs.
+              Architect Anshul Sharma, the founder and principal architect, holds a Master’s in Architecture from Delhi and brings over 18 years of experience. Known for innovative design and client-focused solutions, the firm is a trusted partner for everything from new builds to renovations and large-scale developments.
             </motion.p>
 
             {/* Stats Section */}

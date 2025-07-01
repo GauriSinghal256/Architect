@@ -55,72 +55,72 @@ const Services = () => {
 
 			{/* Services Overview */}
 			<section className="py-16 bg-white">
-	<div className="container-custom">
-		<SectionTitle
-			title="What We Offer"
-			subtitle="Our expertise"
-			center={true}
-		/>
+  <div className="container-custom">
+    <SectionTitle
+      title="What We Offer"
+      subtitle="Our expertise"
+      center={true}
+    />
 
-		<AnimatedSection>
-			<p className="text-lg text-primary-700 max-w-4xl mx-auto text-center mb-16">
-				At Anshul Architects, we provide a comprehensive range of
-				architectural services designed to address the unique needs of
-				each project. From initial concept to final construction, our
-				experienced team delivers innovative solutions with precision and
-				care.
-			</p>
-		</AnimatedSection>
+    <AnimatedSection>
+      <p className="text-lg text-primary-700 max-w-4xl mx-auto text-center mb-16">
+        At Anshul Architects, we provide a comprehensive range of
+        architectural services designed to address the unique needs of
+        each project. From initial concept to final construction, our
+        experienced team delivers innovative solutions with precision and
+        care.
+      </p>
+    </AnimatedSection>
 
-		{/* Services List */}
-		<div className="flex flex-col gap-24">
-			{services.map((service, index) => (
-				<div key={service.id}>
-					<Link to={`/services/${service.id}`}>
-						<motion.div
-							initial={{ opacity: 0, y: 60 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true, amount: 0.2 }}
-							transition={{ duration: 0.8, delay: index * 0.15 }}
-							className="flex flex-col items-center text-center gap-8"
-							whileHover={{
-								scale: 1.03,
-								boxShadow: "0 8px 32px rgba(30,41,59,0.10)",
-								background:
-									"linear-gradient(135deg,rgba(240,244,255,0.18) 0%,rgba(255,255,255,0.08) 100%)",
-							}}
-						>
-							{/* Image */}
-							<AnimatedSection>
-								<div className="overflow-hidden rounded-lg shadow-lg group">
-									<motion.img
-										whileHover={{ scale: 1.05 }}
-										transition={{ duration: 0.8 }}
-										src={service.image}
-										alt={service.title}
-										className="w-full h-80 lg:h-96 object-cover transition-transform duration-700"
-									/>
-								</div>
-							</AnimatedSection>
+    {/* Services List */}
+    <div className="flex flex-col gap-24">
+      {services.map((service, index) => (
+        <div
+          key={service.id}
+          className="shadow-lg rounded-2xl overflow-hidden bg-white"
+        >
+          <Link to={`/services/${service.id}`}>
+            <motion.div
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, delay: index * 0.15 }}
+              className={`grid grid-cols-1 lg:grid-cols-2 ${
+                index % 2 !== 0 ? "lg:[&>*:first-child]:order-2" : ""
+              }`}
+            >
+              {/* Image */}
+              <AnimatedSection>
+                <div className="w-full h-80 lg:h-[450px]">
+                  <motion.img
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.8 }}
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </AnimatedSection>
 
-							{/* Title + Description */}
-							<AnimatedSection delay={0.2}>
-								<div className="max-w-2xl">
-									<h2 className="text-3xl font-heading font-semibold mb-4 group-hover:text-primary-800 transition-colors duration-300">
-										{service.title}
-									</h2>
-									<p className="text-primary-700 group-hover:text-gray-500 transition-colors duration-300">
-										{service.description}
-									</p>
-								</div>
-							</AnimatedSection>
-						</motion.div>
-					</Link>
-				</div>
-			))}
-		</div>
-	</div>
+              {/* Content */}
+              <AnimatedSection delay={0.2}>
+  <div className="w-full h-full p-8 flex flex-col justify-center text-center lg:text-left">
+    <h2 className="text-3xl font-heading font-semibold mb-4 group-hover:text-primary-800 transition-colors duration-300">
+      {service.title}
+    </h2>
+    <p className="text-primary-700 group-hover:text-gray-500 transition-colors duration-300">
+      {service.description}
+    </p>
+  </div>
+</AnimatedSection>
+            </motion.div>
+          </Link>
+        </div>
+      ))}
+    </div>
+  </div>
 </section>
+
 
 
 			{/* Process Section */}

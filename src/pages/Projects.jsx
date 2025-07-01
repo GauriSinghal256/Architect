@@ -9,7 +9,7 @@ const allProjects = [
 
 	{
 		id: 1,
-		title: ' Residential Designs',
+		title: 'Residential Designs',
 		image: '/projectSection/p1.jpeg',
 	},
 	{

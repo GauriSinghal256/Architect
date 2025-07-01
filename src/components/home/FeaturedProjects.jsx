@@ -9,27 +9,26 @@ const projects = [
 		description:
 			'This architecture and interior design combines clean lines and warm textures, reflecting a balance of innovation and tradition.',
 		image:
-			'/house.jpg',
+			'/homepage/project1.jpg',
 		category: '',
 		location: '',
 	},
 	{
 		id: 2,
-		title: 'Serenity Eco Villas',
-		description:
-			'Luxury eco-friendly villas designed with passive cooling systems and integrated with the natural landscape.',
+		title: 'Modern Hospital Facility',
+		description: 'A state-of-the-art healthcare center thoughtfully designed for patient comfort, staff efficiency, and long-term sustainability.',
 		image:
-			'/homepage/p2aa.jpg',
+			'/homepage/project2.jpeg',
 		category: '',
 		location: '',
 	},
 	{
 		id: 3,
-		title: 'Interior Designing',
+		title: 'Innovative Institutional Design',
 		description:
-			'Transforming spaces into timeless expressions of comfort, style, and personality through thoughtful interior design.',
+			'Crafting institutional spaces that prioritize adaptability, sustainability, and user well-being for educational and civic communities.',
 		image:
-			'/homepage/testimonialbg.jpg',
+			'/homepage/project3.jpeg',
 		category: '',
 		location: '',
 	},

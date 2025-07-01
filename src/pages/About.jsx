@@ -71,7 +71,7 @@ const About = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 						<AnimatedSection direction="left">
 							<img
-								src="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1200"
+								src="/award.jpeg"
 								alt="Architects working together"
 								className="rounded-xl shadow-2xl border-4 border-primary-100 w-full h-full object-cover"
 							/>
@@ -80,19 +80,13 @@ const About = () => {
 							<SectionTitle title="Our Story" subtitle="The journey" />
 							<div className="space-y-6 text-primary-700 text-lg">
 								<p>
-									With over two decades of experience, Anshul Architects is recognized as one of the best architects in Kurukshetra. We focus on creating spaces that feel like home — whether it’s designing your dream house, planning a modern office, or crafting the perfect interior. We also offer Vastu consulting, industrial design, and landscape planning, ensuring every space is beautiful, balanced, and deeply personal.
+									Anshul Architects, founded by Architect Anshul Sharma, is a trusted name in architecture and design, delivering quality projects across Kurukshetra, Mohali, Karnal, Ambala, Panipat, and nearby regions. With offices in Kurukshetra (Anshul Architects) and Mohali (AKA Architects), the firm has built a strong presence and reputation for thoughtful, innovative spaces.
 								</p>
 								<p>
-									Over the years, we have had the privilege of working on a wide
-									range of projects across India and internationally. Each
-									project has contributed to our growth and deepened our
-									understanding of how thoughtful design can transform spaces
-									and communities.
+									Architect Anshul Sharma, a Master’s graduate in Architecture from Delhi with over 18 years of experience, leads a dedicated team that specializes in residential, commercial, institutional, and industrial design. The firm’s diverse portfolio reflects a balance of creativity, functionality, and sustainability tailored to each client’s unique needs.
 								</p>
 								<p>
-									Today, Anshul Architects is recognized as one of India's
-									leading architectural firms, with a portfolio of award-winning
-									projects and a reputation for innovative, sustainable design.
+									Whether it’s a new build, renovation, or large-scale development, Anshul Architects works closely with clients to turn ideas into inspiring, practical spaces. From concept to completion, the team’s commitment to detail and client satisfaction makes them a dependable partner for any architectural vision.
 								</p>
 							</div>
 						</AnimatedSection>

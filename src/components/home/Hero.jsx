@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const processSteps = [
   {
     number: "01",
-    title: "You visit us",
+    title: "Visit our office",
     description: "",
     image: "image.png" 
   },
@@ -19,7 +19,7 @@ const processSteps = [
     number: "03",
     title: "Begin The Detailed Designing Process",
     description: "",
-    image: "bg-4.jpg" // 
+    image: "bg-4.jpg"  
   },
   {
     number: "04",
@@ -32,22 +32,28 @@ const processSteps = [
 const heroSlides = [
   {
     id: 1,
-    image: '/homepage/aahp3.jpg',
+    image: '/homepage/hero1.jpeg',
     title: 'Designing Dreams, Building Realities',
     subtitle: 'Turning your vision into living form.'
   },
   {
     id: 2,
-    image: '/homepage/aahp1.jpg',
+    image: '/homepage/hero6.jpeg',
     title: 'Where Vision Meets Structure',
     subtitle: 'From concept to creation — reimagining every detail.'
   },
   {
     id: 3,
-    image: '/homepage/aahp2.jpg',
+    image: '/homepage/hero9.jpeg',
     title: 'Timeless Designs, Modern Living',
     subtitle: 'Elevating everyday living with iconic spaces.'
-  }
+  },
+  {
+  id: 4,
+  image: '/homepage/hero12.jpeg',
+  title: 'Spaces That Inspire and Endure',
+  subtitle: 'Crafting architectural legacies for generations to come.'
+}
 ];
 
 const Hero = () => {
@@ -77,7 +83,7 @@ const Hero = () => {
             <img
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover brightness-50"
             />
           </motion.div>
         </AnimatePresence>
