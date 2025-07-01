@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 const processSteps = [
   {
     number: "01",
-    title: "We Visit You At Home",
+    title: "You visit us",
     description: "",
     image: "image.png" 
   },
   {
     number: "02",
-    title: "Preliminary Computer Designs",
+    title: "Preliminary discussion and conceptual design",
     description: "",
     image: "bg-2.jpg" 
   },
@@ -38,7 +38,7 @@ const heroSlides = [
   },
   {
     id: 2,
-    image: '/homepage/aahp1.jpg',
+    image: '/homepage/aahp.jpg',
     title: 'Where Vision Meets Structure',
     subtitle: 'From concept to creation — reimagining every detail.'
   },
