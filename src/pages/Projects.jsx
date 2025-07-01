@@ -9,12 +9,12 @@ const allProjects = [
 
 	{
 		id: 1,
-		title: 'House Residential Interior And Designs',
+		title: ' Residential Designs',
 		image: '/projectSection/p1.jpeg',
 	},
 	{
 		id: 2,
-		title: 'commercial interior',
+		title: 'Commercial Design',
 		image: '/projectSection/p2.jpeg',
 
 	},
@@ -25,7 +25,7 @@ const allProjects = [
 	},
 	{
 		id: 4,
-		title: 'Institutional Interior',
+		title: 'Institutional Design',
 		image: '/projectSection/p4.jpeg',
 	},
 ];
