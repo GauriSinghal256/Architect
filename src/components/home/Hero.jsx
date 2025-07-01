@@ -38,7 +38,7 @@ const heroSlides = [
   },
   {
     id: 2,
-    image: '/homepage/aahp.jpg',
+    image: '/homepage/aahp1.jpg',
     title: 'Where Vision Meets Structure',
     subtitle: 'From concept to creation — reimagining every detail.'
   },
