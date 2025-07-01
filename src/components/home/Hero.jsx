@@ -17,7 +17,7 @@ const processSteps = [
   },
   {
     number: "03",
-    title: "Begin The Detailed Design Process",
+    title: "Begin The Detailed Designing Process",
     description: "",
     image: "bg-4.jpg" // 
   },

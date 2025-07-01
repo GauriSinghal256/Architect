@@ -23,9 +23,9 @@ const fadeIn = (direction = 'up', delay = 0) => ({
 
 const About = () => {
   const stats = [
-    { number: "120+", label: "Projects Completed" },
+    { number: "140+", label: "Projects Completed" },
     { number: "18", label: "Design Awards" },
-    { number: "40+", label: "Team Members" },
+    { number: "20+", label: "Team Members" },
   ];
 
   return (
