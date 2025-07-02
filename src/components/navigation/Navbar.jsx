@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <img className='h-8 w-8' src="/AA.png" alt="Anshul Architects Logo" />
-          <span className="text-xl font-heading font-semibold text-gray-400">Anshul Architects</span>
+          <span className="text-xl font-heading font-semibold text-black">Anshul Architects</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -57,8 +57,8 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `relative font-medium transition-colors hover:text-primary-300 ${
-                  isActive ? 'text-primary-400' : 'text-gray-400'
+                `relative font-medium transition-colors hover:text-amber-200 ${
+                  isActive ? 'text-amber-600' : 'text-black'
                 }`
               }
             >
@@ -85,11 +85,11 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-400 focus:outline-none"
+          className="md:hidden text-black focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
         >
-          {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
+          {isOpen ? <HiX size={24} /> : <HiMenu size={32} />}
         </button>
       </div>
 
@@ -110,7 +110,7 @@ const Navbar = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     `p-2 font-medium ${
-                      isActive ? 'text-primary-600 bg-primary-50 rounded' : 'text-gray-500'
+                      isActive ? 'text-amber-600 bg-primary-50 rounded' : 'text-black'
                     }`
                   }
                 >

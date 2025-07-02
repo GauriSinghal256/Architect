@@ -94,13 +94,17 @@ const Projects = () => {
 				</div> */}
 				</section>
 				<div className="flex flex-col justify-center items-center">
-					<h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 relative animate__animated animate__fadeInDown pt-2">
+					<h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 relative animate__animated animate__fadeInDown pt-12">
 						Our Projects
 						<span className="absolute bottom-0 left-0 w-full h-1 bg-black transform scale-x-0 origin-left animate__animated animate__slideInLeft animate__delay-1s" style={{ animationDuration: '1s', animationFillMode: 'forwards' }}></span>
 					</h1>
-					<p className="text-lg pt-3 text-black animate__animated animate__fadeInUp" style={{ animationDuration: '1s', animationDelay: '0.5s' }}>
-						Explore our diverse portfolio of architectural projects spanning residential, commercial, cultural, and urban planning domains.
-					</p>
+					<p
+  className="text-lg pt-3 text-black animate__animated animate__fadeInUp text-center"
+  style={{ animationDuration: '1s', animationDelay: '0.5s' }}
+>
+  Explore our diverse portfolio of architectural projects spanning residential, commercial, cultural, and urban planning domains.
+</p>
+
 				</div>
 
 				{/* Projects Section */}

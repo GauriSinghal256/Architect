@@ -177,7 +177,7 @@ const About = () => {
 									}}
 									className="bg-white p-8 rounded-lg shadow-md h-full transition-all duration-300"
 								>
-									<div className="text-primary-800 mb-4">
+									<div className="flex justify-center text-primary-800 mb-4">
 										<motion.div
 											whileHover={{ rotate: 10 }}
 											transition={{ type: "spring" }}
@@ -185,10 +185,10 @@ const About = () => {
 											{item.icon}
 										</motion.div>
 									</div>
-									<h3 className="text-xl font-heading font-semibold mb-3">
+									<h3 className="text-xl font-heading font-semibold mb-3 text-center">
 										{item.title}
 									</h3>
-									<p className="text-primary-600">{item.desc}</p>
+									<p className="text-primary-600 text-center">{item.desc}</p>
 								</motion.div>
 							</AnimatedSection>
 						))}

@@ -101,7 +101,7 @@ const Contact = () => {
                 <SectionTitle 
                   title="Get In Touch" 
                   subtitle="Our information"
-                  className="mb-8"
+                  className="mb-8 text-center"
                 />
                 
                 <div className="space-y-6 mb-10">
@@ -118,19 +118,19 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-4 border border-gray-400 p-4 hover:bg-gray-200">
-                    <div className="bg-primary-100 p-3 rounded-lg">
-                      <FaEnvelope className="w-6 h-6 text-primary-800" />
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-lg mb-1">Email Us</h3>
-                      <p className="text-primary-600">
-                        <a href="mailto:projects@anshularchitects.com" className="hover:text-primary-800 transition-colors">
-                          anshulsharma.upadhyay@gmail.com
-                        </a>
-                      </p>
-                    </div>
-                  </div>
+              <div className="flex flex-col border border-gray-400 p-4 hover:bg-gray-200 w-full">
+  <div className="flex items-center space-x-3">
+    <div className="bg-primary-100 p-3 rounded-lg">
+      <FaEnvelope className="w-6 h-6 text-primary-800" />
+    </div>
+    <h3 className="font-medium text-lg">Email Us</h3>
+  </div>
+  <p className="text-primary-600 break-words ml-14 mt-2">
+    <a href="mailto:projects@anshularchitects.com" className="hover:text-primary-800 transition-colors break-words">
+      anshulsharma.upadhyay@gmail.com
+    </a>
+  </p>
+</div>
                   
                   <div className="flex items-start space-x-4 border border-gray-400 p-4 hover:bg-gray-200">
                     <div className="bg-primary-100 p-3 rounded-lg">
@@ -147,14 +147,14 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div>
+                <div className='text-center'>
                   <h3 className="font-medium text-lg mb-3">Follow Us</h3>
-                  <div className="flex space-x-4">
-                    <a href="https://www.instagram.com/anshul_architects/" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
-                      <FaInstagram className="w-5 h-5 text-primary-800" />
+                  <div className="flex items-center justify-center space-x-4">
+                    <a href="https://www.instagram.com/anshul_architects/" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-4 rounded-full transition-colors">
+                      <FaInstagram className="w-6 h-6 text-primary-800" />
                     </a>
                     <a href="https://www.facebook.com/sharma.anshul.upadhyay/" target="_blank" rel="noopener noreferrer" className="bg-primary-100 hover:bg-primary-200 p-3 rounded-full transition-colors">
-                      <FaFacebookF className="w-5 h-5 text-primary-800" />
+                      <FaFacebookF className="w-6 h-6 text-primary-800" />
                     </a>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                 <SectionTitle 
                   title="Send Us a Message" 
                   subtitle="We'd love to hear from you"
-                  className="mb-8"
+                  className="mb-8 text-center"
                 />
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -247,7 +247,7 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   
-                  <div>
+                  <div className='text-center'>
                     <button
                       type="submit"
                       className="btn btn-primary w-full md:w-auto"
