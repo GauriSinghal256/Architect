@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import m6 from "../../assets/project1/m6.jpeg";
+import m7 from "../../assets/project4/m5.png";
+import m8 from "../../assets/project1/m3.jpeg";
 
 const processSteps = [
   {
@@ -32,7 +35,7 @@ const processSteps = [
 const heroSlides = [
   {
     id: 9,
-    image: '/src/assets/project1/m6.jpeg',
+    image: m6,
     title: 'Designing Dreams, Building Realities',
     subtitle: 'Turning your vision into living form.'
   },
@@ -44,7 +47,7 @@ const heroSlides = [
   },
   {
     id: 10,
-    image: '/src/assets/project4/m5.png',
+    image: m7,
     title: 'Timeless Designs, Modern Institutions',
     subtitle: 'Elevating institutional designs with iconic spaces.'
   },
@@ -80,7 +83,7 @@ const heroSlides = [
   },
   {
     id: 4,
-    image: '/src/assets/project1/m3.jpeg',
+    image: m8,
     title: 'Design with Purpose and Passion',
     subtitle: 'Merging creativity with practical solutions.'
   },
