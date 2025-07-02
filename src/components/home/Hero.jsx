@@ -30,24 +30,24 @@ const processSteps = [
 ];
 
 const heroSlides = [
-  // {
-  //   id: 1,
-  //   image: '/homepage/hero3.jpeg',
-  //   title: 'Designing Dreams, Building Realities',
-  //   subtitle: 'Turning your vision into living form.'
-  // },
+  {
+    id: 9,
+    image: '/src/assets/project1/m6.jpeg',
+    title: 'Designing Dreams, Building Realities',
+    subtitle: 'Turning your vision into living form.'
+  },
   {
     id: 1,
-    image: '/homepage/hero2.jpeg',
+    image: '/homepage/project3.jpeg',
     title: 'Where Vision Meets Structure',
     subtitle: 'From concept to creation — reimagining every detail.'
   },
-  // {
-  //   id: 3,
-  //   image: '/homepage/hero4.jpeg',
-  //   title: 'Timeless Designs, Modern Living',
-  //   subtitle: 'Elevating everyday living with iconic spaces.'
-  // },
+  {
+    id: 10,
+    image: '/src/assets/project4/m5.png',
+    title: 'Timeless Designs, Modern Institutions',
+    subtitle: 'Elevating institutional designs with iconic spaces.'
+  },
   // {
   //   id: 4,
   //   image: '/homepage/hero5.jpeg',
@@ -80,7 +80,7 @@ const heroSlides = [
   },
   {
     id: 4,
-    image: '/homepage/hero7.jpeg',
+    image: '/src/assets/project1/m3.jpeg',
     title: 'Design with Purpose and Passion',
     subtitle: 'Merging creativity with practical solutions.'
   },
@@ -138,7 +138,7 @@ const Hero = () => {
         <img
           src={heroSlides[currentSlide].image}
           alt={heroSlides[currentSlide].title}
-          className="w-full h-full object-fill brightness-60" // Changed from object-cover to object-fill
+          className="w-full h-full object-cover brightness-60"
         />
       </motion.div>
     </AnimatePresence>
